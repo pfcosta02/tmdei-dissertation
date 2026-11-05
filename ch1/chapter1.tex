@@ -1,35 +1,52 @@
 % Chapter 1
 % 
-\chapter{Thesis Structure} % Main chapter title
-\label{chap:Chapter1} % For referencing the chapter elsewhere, use Chapter~\ref{Chapter1}
-
+\chapter{Introdução} % Main chapter title
+\label{chap:Chapter1} % For referencing the chapter elsewhere
 
 %-------------------------------------------------------------------------------
 %---------
 %
-\section{Introduction} 
-\label{sec:chap1_introduction} %For referencing this section elsewhere, use Section~\ref{sec:chap1_introduction}
+\section{Contextualização} 
+\label{sec:chap1_context} %For referencing this section elsewhere
 
-The goal of a Master dissertation is to document the work developed and highlight its importance. Firstly, the author should aim to follow the best practices in terms of writing style and organise the contents such that the message is clear. The language style used should be clear, and avoid colloquial expressions.
+\section{Enquadramento do projeto} 
+\label{sec:chap1_enquadramento} %For referencing this section elsewhere
 
-Please use an automated spell checker during the writing of your work.
+\section{Problema e motivação} 
+\label{sec:chap1_problem} %For referencing this section elsewhere
 
-This chapter provides some brief recommendations for the writing of your dissertation. 
+A disponibilização de CBT-I através de aplicações móveis permite apoiar a execução de atividades terapêuticas e a monitorização do sono. Existem soluções digitais personalizadas e estudos que integram wearables; permanece, contudo, relevante investigar como combinar dados individuais de sono e contexto com uma política de notificação ao utilizador adaptativa, e qual o benefício adicional face a uma política predefinida.
+O problema deste projeto consiste em conceber e avaliar um mecanismo que selecione recomendações de um percurso terapêutico definido e identifique oportunidades adequadas para as disponibilizar. As decisões devem considerar o histórico e o contexto do utilizador, a qualidade e o instante de disponibilidade dos dados e a possibilidade de adiar ou não enviar uma intervenção. A deteção de necessidade, a disponibilidade do utilizador e o benefício terapêutico constituem dimensões distintas.
+Os dados do smartwatch serão complementados por um diário de sono e, quando pertinente, por avaliações breves de contexto. As estimativas dos wearables não serão assumidas como medições clínicas de referência.
 
-\section{Structure}
+\section{Objetivos} 
+\label{sec:chap1_objectives} %For referencing this section elsewhere
 
-The structure of the document can be divided in three major parts: Introduction, Body and Conclusions.
+Objetivo geral: desenvolver e avaliar um protótipo móvel de apoio à CBT-I que utilize dados de smartwatch e informação do utilizador para adaptar recomendações e o seu momento de entrega, investigando a fiabilidade técnica e o possível efeito na adesão e no sono.
 
-The introduction includes, at least, a statement of what was the work developed; a brief, focused, state of the art; an explanation of how the work fits into the current state of the art, and how it contributes to it; a description of the structure of the document.
+Objetivos Específicos:
+\begin{itemize}
+    \item Identificar os dados de sono e contexto relevantes e verificar a sua disponibilidade, qualidade e atraso de acesso no smartwatch e na plataforma selecionados;
+    \item Definir, com apoio de especialistas, o percurso de CBT-I, os conteúdos elegíveis e os critérios para reconhecer oportunidades de intervenção;
+    \item Desenvolver e comparar um mecanismo de IA para identificar essas oportunidades com uma referência simples baseada em regras explícitas;
+    \item Implementar um sistema de recomendações que adapte a seleção e a entrega de conteúdos ao perfil, histórico e contexto do utilizador, respeitando as regras terapêuticas definidas;
+    \item Construir um protótipo de aplicação móvel com diário de sono, recolha de dados, acompanhamento do progresso e notificações adaptativas, integrando o mecanismo de IA;
+    \item Avaliar o desempenho técnico, a usabilidade e a viabilidade de utilização; se existirem condições, realizar um piloto comparativo para estudar adesão e alterações no sono;
+    \item Analisar resultados, limitações e fatores que condicionam a personalização e o momento de entrega, propondo melhorias para trabalhos futuros.
+\end{itemize}
 
-The Body of the dissertation should include a literature review (in one or more chapters) and one or more chapters that describe the work developed and the results, justifying them adequately.
 
-The conclusions make a final balance of the work, highlighting the main aspects of the work and making critical judgments about what was accomplished, and providing suggestions for future work, if appropriate. 
+\section{Questões de investigação} 
+\label{sec:chap1_researchQuestions} %For referencing this section elsewhere
 
-\section{Formatting}
+Pergunta 1:
+Qual o efeito de recomendações de CBT-I personalizadas e entregues em momentos adaptados ao contexto do utilizador na qualidade do sono e na adesão ao tratamento, comparativamente a recomendações genéricas entregues em horários fixos?
 
-The document can be written in Portuguese or English. The minimum number of pages is 60 and the maximum is 120 (not counting the Annexes). Small deviations are allowed. Please follow the margins and fonts  defined in this template. The font size should be 11pt. The document should be printed double sided.
+Pergunta 2:
+Com que desempenho é possível identificar oportunidades de intervenção de CBT-I, previamente definidas, utilizando técnicas de inteligência artificial e dados de smartwatch disponíveis no momento da decisão?
 
-Note that the graphical aspect of the thesis is important, but does not replace a well-written and well-organised presentation of ideas.
+\section{Abordagem geral e contributos esperados} 
+\label{sec:chap1_approach} %For referencing this section elsewhere
 
-Please refer to Chapter~\ref{chap:Chapter2} and Chapter~\ref{chap:Chapter3} for details about this template, how to format the document and insert citations, figures, tables, equations and other elements.
+\section{Organização do documento} 
+\label{sec:chap1_organization} %For referencing this section elsewhere

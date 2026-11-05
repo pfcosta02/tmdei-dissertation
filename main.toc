@@ -1,0 +1,31 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Figures}{xv}{section*.9}%
+\contentsline {chapter}{List of Tables}{xvii}{section*.11}%
+\contentsline {chapter}{List of Algorithms}{xix}{section*.13}%
+\contentsline {chapter}{List of Source Code}{xxi}{section*.15}%
+\contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.16}%
+\contentsline {section}{\numberline {1.1}Contextualização}{1}{section.17}%
+\contentsline {section}{\numberline {1.2}Enquadramento do projeto}{1}{section.18}%
+\contentsline {section}{\numberline {1.3}Problema e motivação}{1}{section.19}%
+\contentsline {section}{\numberline {1.4}Objetivos}{1}{section.20}%
+\contentsline {section}{\numberline {1.5}Questões de investigação}{2}{section.21}%
+\contentsline {section}{\numberline {1.6}Abordagem geral e contributos esperados}{2}{section.22}%
+\contentsline {section}{\numberline {1.7}Organização do documento}{2}{section.23}%
+\contentsline {chapter}{\numberline {2}Fundamentação teórica}{3}{chapter.24}%
+\contentsline {section}{\numberline {2.1}Fundamentos do sono}{3}{section.25}%
+\contentsline {subsection}{\numberline {2.1.1}Funções do sono}{3}{subsection.26}%
+\contentsline {subsection}{\numberline {2.1.2}Arquitetura e fases do sono}{4}{subsection.27}%
+\contentsline {subsection}{\numberline {2.1.3}Regulação circadiana e homeostática}{4}{subsection.28}%
+\contentsline {subsection}{\numberline {2.1.4}Variabilidade individual}{5}{subsection.29}%
+\contentsline {section}{\numberline {2.2}Insónia e dificuldades de sono}{5}{section.30}%
+\contentsline {subsection}{\numberline {2.2.1}Conceito e manifestações da insónia}{6}{subsection.31}%
+\contentsline {subsection}{\numberline {2.2.2}Prevalência e relevância epidemiológica}{6}{subsection.32}%
+\contentsline {subsection}{\numberline {2.2.3}Fatores envolvidos no desenvolvimento e manutenção da insónia}{7}{subsection.33}%
+\contentsline {subsection}{\numberline {2.2.4}Distinção face a outras dificuldades e perturbações do sono}{7}{subsection.34}%
+\contentsline {subsection}{\numberline {2.2.5}Impacto no funcionamento diário e no bem-estar}{8}{subsection.35}%
+\contentsline {section}{\numberline {2.3}Avaliação e monitorização do sono}{8}{section.36}%
+\contentsline {subsection}{\numberline {2.3.1}Questionários de avaliação do sono e da insónia}{8}{subsection.37}%
+\contentsline {subsection}{\numberline {2.3.2}Diário de sono e indicadores de acompanhamento}{9}{subsection.38}%
+\contentsline {section}{\numberline {2.4}Terapia Cognitivo-Comportamental para a Insónia}{10}{section.39}%
+\contentsline {section}{\numberline {2.5}Intervenções digitais e personalização}{10}{section.40}%
+\contentsline {chapter}{Appendix \numberline {A}Appendix Title Here}{11}{appendix.41}%

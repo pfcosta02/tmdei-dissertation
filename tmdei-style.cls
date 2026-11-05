@@ -164,7 +164,6 @@
 
 \RequirePackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
-\RequirePackage{cmbright} % Default font: CM Bright, lighter sans-serif variant of Computer Modern Sans Serif 
 
 \RequirePackage[chapter]{algorithm} % Required for Algorithms
 \RequirePackage{algpseudocode} % Part algorithmicx package, required to customize the layout of algorithms.
@@ -344,20 +343,21 @@ KOMA-script documentation for details.}]{fancyhdr}
 \newcommand{\maketitlepage}{
 	\checktoopen
 	\begin{titlepage}
-	{\centering \includegraphics[width=3in]{/frontmatter/assets/isep_logo.pdf} \\}
-	\null\vfill
+	\noindent\makebox[\textwidth][c]{\includegraphics[width=3in]{frontmatter/assets/isep_logo.pdf}}\par
+	\hbadness=10000
+	\vspace*{\fill}
 	\begin{center}
-	{\Huge \bfseries \ttitle}\\ % Thesis title
-	\ifdefined\tsubtitle {\huge \bfseries \tsubtitle} \\ \fi % thesis sub title, if exists
+	{\Huge \bfseries \ttitle\par} % Thesis title
+	\ifdefined\tsubtitle {\huge \bfseries \tsubtitle\par}\fi % thesis sub title, if exists
 	\vfill
-	{\huge \bfseries \authorname}\\
+	{\huge \bfseries \authorname\par}
 	\vfill
-	{\Large \bfseries \dissertationdisclamer~\subjectname}
+	{\Large \bfseries \dissertationdisclamer~\subjectname\par}
 	\end{center}
 	\vfill
 	{\large \bfseries \noindent \advisorlabel: \advname } \\
-	\ifdefined\cosupname {\large \bfseries \coadvisorlabel: \coadvname} \\ \fi
-	{\large \bfseries \noindent \supervisorlabel: \supname } \\
+	\ifdefined\coadvname {\large \bfseries \coadvisorlabel: \coadvname} \\ \fi
+	\ifdefined\supname {\large \bfseries \noindent \supervisorlabel: \supname } \\ \fi
 	\ifdefined\cosupname {\large \bfseries \cosupervisorlabel: \cosupname} \\ \fi
 	\vfill
         % add the thesis committee, if committeepresident is defined
@@ -385,7 +385,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 \providecaptionname{portuguese}{\statementlabel}{Declara\c{c}\~ao de Integridade} % Portuguese
 
 \newcommand{\statementtext}{I hereby declare having conducted this academic work with integrity.\\I have not plagiarised or applied any form of undue use of information or falsification of results along the process leading to its elaboration.\\Therefore the work presented in this document is original and authored by me, having not previously been used for any other end.\\I further declare that I have fully acknowledged the Code of Ethical Conduct of P.PORTO.\\ISEP, \tdate}
-\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\statementtext}{I hereby declare having conducted this academic work with integrity.\\\\I have not plagiarised or applied any form of undue use of information or falsification of results along the process leading to its elaboration.\\\\Therefore the work presented in this document is original and authored by me, having not previously been used for any other end.\\\\I further declare that I have fully acknowledged the Code of Ethical Conduct of P.PORTO.\\\\ISEP, \tdate}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\statementtext}{I hereby declare having conducted this academic work with integrity. I have not plagiarised or applied any form of undue use of information or falsification of results along the process leading to its elaboration. Therefore the work presented in this document is original and authored by me, having not previously been used for any other end. I further declare that I have fully acknowledged the Code of Ethical Conduct of P.PORTO. ISEP, \tdate}
 \providecaptionname{portuguese}{\statementtext}{Declaro ter conduzido este trabalho acad\'emico com integridade.\\\\N\~{a}o plagiei ou apliquei qualquer forma de uso indevido de informa\c{c}\~{o}es ou falsifica\c{c}\~{a}o de resultados ao longo do processo que levou \`{a} sua elabora\c{c}\~{a}o.\\\\Portanto, o trabalho apresentado neste documento \'{e} original e de minha autoria, n\~{a}o tendo sido utilizado anteriormente para nenhum outro fim.\\\\Declaro ainda que tenho pleno conhecimento do C\'{o}digo de Conduta \'{E}tica do P.PORTO.\\\\ISEP, \tdate} % Portuguese
 
 \newenvironment{integritystatement}{

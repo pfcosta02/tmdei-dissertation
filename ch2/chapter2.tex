@@ -1,328 +1,176 @@
 % Chapter 2
+% 
+\chapter{Fundamentação teórica} % Main chapter title
+\label{chap:Chapter2} % For referencing the chapter elsewhere
 
-\chapter{About \LaTeX{} and How to Use This Template} % Main chapter title
+%-------------------------------------------------------------------------------
+%---------
+%
+\section{Fundamentos do sono} 
+\label{sec:chap2_sleepFundaments} %For referencing this section elsewhere
 
-\label{chap:Chapter2} % For referencing the chapter elsewhere, use \ref{chap:Chapter2} 
+O sono apresenta-se como um processo biológico essencial à manutenção da saúde e ao funcionamento diário. Envolve um conjunto organizado de processos fisiológicos relacionados com o funcionamento cognitivo, a regulação emocional e a saúde física, contribuindo para o bem-estar e para o desempenho das atividades quotidianas (Grandner, 2022; Ramar et al., 2021; Roland, 2023).
 
-%----------------------------------------------------------------------------------------
+A caracterização do sono compreende diferentes dimensões, incluindo a duração, a continuidade, a regularidade, o horário e a organização dos seus ciclos. Segundo Ramar et al. (2021), um sono saudável requer duração suficiente, uma qualidade adequada, um horário apropriado e ausência de perturbações do sono. A compreensão destas dimensões permite enquadrar tanto a avaliação dos padrões individuais como o desenvolvimento de intervenções destinadas à sua melhoria.
 
-\section{Learning \LaTeX{}}
+\subsection{Funções do sono}
+\label{sec:chap2_sleepFunctions}
 
-\LaTeX{} is not a \textsc{wysiwyg} (What You See is What You Get) program, unlike word processors such as Microsoft Word or Apple's Pages. Instead, a document written for \LaTeX{} is actually a simple, plain text file that contains \emph{no formatting}. You tell \LaTeX{} how you want the formatting in the finished document by writing in simple commands amongst the text, for example, if I want to use \emph{italic text for emphasis}, I write the \verb|\emph{text}| command and put the text I want in italics in between the curly braces. This means that \LaTeX{} is a \enquote{mark-up} language, very much like HTML.
+Como foi referido acima, o sono participa na manutenção de funções cognitivas e fisiológicas necessárias ao funcionamento do organismo. No domínio cognitivo, apresenta uma relação importante com a aprendizagem e com a memória. A consolidação da memória corresponde ao processo através do qual a informação adquirida pode tornar-se mais estável após a aprendizagem. Num estudo experimental, Gais et al. (2006) observaram que dormir após a aprendizagem favoreceu a recordação posterior de informação declarativa, apoiando e reforçando a participação do sono na sua retenção.
 
-\subsection{A (not so short) Introduction to \LaTeX{}}
+No domínio fisiológico, o sono relaciona-se com o funcionamento cardiovascular, a regulação hormonal, o metabolismo e a atividade imunitária. Ao longo do episódio de sono, a atividade destes sistemas modifica-se em associação com os diferentes estados de sono e vigília. Por exemplo, durante o sono não REM (\textit{Rapid Eye Movement}, a última fase do sono), a frequência cardíaca e a pressão arterial tendem a diminuir, apresentando um comportamento distinto durante o sono REM (National Heart, Lung, and Blood Institute [NHLBI]).
 
-If you are new to \LaTeX{}, there is a very good eBook -- freely available online as a PDF file -- called, \enquote{The Not So Short Introduction to \LaTeX{}}. The book's title is typically shortened to just \emph{lshort}. You can download the latest version (as it is occasionally updated) from here:
-\url{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}
+A importância do sono manifesta-se também no funcionamento durante a vigília. A obtenção de sono suficiente e de qualidade contribui para a atenção, a memória, o bem-estar emocional e a realização das atividades diárias, incluindo as tarefas profissionais e académicas. A segurança constitui igualmente uma dimensão relevante, nomeadamente no que respeita ao risco de acidentes de viação associado ao sono insuficiente (Centers for Disease Control and Prevention [CDC], 2024).
 
-It is also available in several other languages. Find yours from the list on this page: \url{http://www.ctan.org/tex-archive/info/lshort/}
+A duração insuficiente do sono encontra-se associada a consequências adversas para a saúde. Segundo Watson, Badr, et al. (2015), dormir regularmente menos de sete horas por noite na idade adulta está associado a hipertensão arterial, diabetes, doença cardiovascular, acidente vascular cerebral e depressão, entre outros problemas de saúde. Os autores referem também associações com alterações do funcionamento imunitário, pior desempenho e maior risco de erros e acidentes. Estas associações reforçam a relevância da duração do sono para a saúde, mas não significam que todas estas consequências ocorram em cada indivíduo, nem que dormir menos de sete horas seja, por si só, equivalente a ter insónia.
 
-It is recommended to take a little time out to learn how to use \LaTeX{} by creating several, small `test' documents, or having a close look at several templates on:\\ 
-\url{http://www.LaTeXTemplates.com}\\ 
-Making the effort now means you're not stuck learning the system when what you \emph{really} need to be doing is writing your thesis.
+Estas relações evidenciam a importância de considerar o sono na promoção da saúde e do bem-estar. A sua avaliação deve abranger o período de repouso e as repercussões no funcionamento diurno, atendendo às diferentes dimensões que caracterizam um sono saudável (Ramar et al., 2021).
 
-\subsection{A Short Math Guide for \LaTeX{}}
+\subsection{Arquitetura e fases do sono}
+\label{sec:chap2_sleepCycle}
 
-If your thesis is going to contain heavy mathematical content, be sure that \LaTeX{} will make it look beautiful, even though it won't be able to solve the equations for you.
+A arquitetura do sono corresponde à organização temporal dos seus estados e estádios ao longo de um episódio de sono. Os estádios são etapas do sono identificadas por características fisiológicas, como a atividade cerebral, os movimentos oculares e o tónus muscular.
 
-The \enquote{Not So Short Introduction to \LaTeX} (available on \url{http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf}{CTAN}) should tell you everything you need to know for most cases of typesetting mathematics. If you need more information, a much more thorough mathematical guide is available from the AMS called, \enquote{A Short Math Guide to \LaTeX} and can be downloaded from:
-\url{ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf}
+Durante o sono, distinguem-se dois estados principais: o sono com movimentos oculares rápidos, designado por REM (Rapid Eye Movement), e o sono não REM, habitualmente identificado como NREM. Este último subdivide-se nos estádios N1, N2 e N3, diferenciados pelas características da atividade cerebral e por outros sinais fisiológicos (NHLBI, 2022; (Memar \& Faradji, 2018; Patel et al., 2025).
 
-There are many different \LaTeX{} symbols to remember, luckily you can find the most common symbols in \url{http://ctan.org/pkg/comprehensive}{The Comprehensive \LaTeX~Symbol List}.
+O estádio N1 corresponde à transição entre a vigília e o sono, é um sono muito ligeiro. No estádio N2, o sono já encontra-se estabelecido, com padrões específicos de atividade cerebral, enquanto o estádio N3 corresponde ao sono profundo, também denominado sono de ondas lentas. Estes três estados são os estados NREM. O sono REM caracteriza-se por movimentos oculares rápidos, atividade cerebral elevada e uma redução marcada do tónus muscular, sendo frequentemente associado à ocorrência de sonhos (NHLBI, 2022).
 
-You can write an equation, which is automatically given an equation number by \LaTeX{} like this:
-\begin{verbatim}
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
-\end{verbatim}
+Os estados NREM e REM alternam ao longo da noite em ciclos cuja composição varia. Em termos gerais, o sono N3 apresenta maior expressão na primeira parte da noite, enquanto os períodos de sono REM tendem a ser mais prolongados na parte final. Podem também ocorrer despertares breves entre ciclos. Assim, a arquitetura do sono apresenta uma organização dinâmica, com alterações na distribuição dos estádios ao longo do episódio de sono (NHLBI, 2022).
 
-This will produce Einstein's famous energy-matter equivalence equation:
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
+\subsection{Regulação circadiana e homeostática}
+\label{sec:chap2_regulacaoCircadiana}
 
-All equations you write (which are not in the middle of paragraph text) are automatically given equation numbers by \LaTeX{}. If you don't want a particular equation numbered, use the unnumbered form:
-\begin{verbatim}
-\[ a^{2}=4 \]
-\end{verbatim}
+A regulação do sono pode ser enquadrada pelo modelo dos dois processos proposto por Borbély (1982). Este modelo descreve a interação entre um processo homeostático, denominado processo S, e um processo circadiano, denominado processo C. Ambos contribuem para a propensão para dormir e para a organização temporal dos períodos de sono e vigília.
 
-\LaTeX{} automatically adjusts the style of the math expressions according to the case if they are inline or not (so that they occupy more or less space), but you can set this explicitly. For instance, if you want an in-line mathematical element to display as a equation-like element put \verb|\displaystyle| before that element. Use \verb|\textstyle| for small, inline-like maths, before the command that generates the element.
+O processo homeostático representa a necessidade de sono que aumenta durante a vigília e diminui durante o sono. Quanto maior o período de vigília, maior tende a ser a pressão para dormir. A atividade de ondas lentas durante o sono NREM constitui uma expressão fisiológica relevante deste processo: apresenta valores mais elevados após privação de sono e diminui ao longo do episódio de sono (Borbély, 1982; Dijk \& Czeisler, 1995).
 
-\subsection{Obtaining \LaTeX{}}
- 
-The \LaTeX{} distribution is available for many systems including Windows, Linux and Mac OS X. Check the webpage for the \LaTeX{} project for more information: \url{https://latex-project.org/ftp.html}.
+O processo circadiano está associado a ritmos endógenos com um período próximo de 24 horas. Estes ritmos contribuem para organizar a distribuição temporal do sono, da vigília e de outras funções fisiológicas. A luz constitui um sinal ambiental importante para a sua sincronização. A informação luminosa recebida pelos olhos participa na regulação do relógio central, localizado no núcleo supraquiasmático do hipotálamo, permitindo ajustar os ritmos internos ao ciclo ambiental de luz e escuridão (NHLBI).
 
-%----------------------------------------------------------------------------------------
+A interação entre os processos homeostático e circadiano ajudam a explicar a variação da propensão para dormir ao longo do dia. Dijk e Czeisler (1995) demonstraram contributos distintos e interativos destes mecanismos para a estrutura e consolidação do sono. Deste modo, a interpretação de um padrão de sono deve considerar o histórico de sono e vigília e a sua relação com o momento do ciclo circadiano.
 
-\section{Getting Started with this Template}
+\subsection{Variabilidade individual}
+\label{sec:chap2_variabilidade}
 
-If you are familiar with \LaTeX{}, then you should explore the directory structure of the template and then proceed to place your own information into the \emph{THESIS INFORMATION} block of the \file{main.tex} file. You can then modify the rest of this file to your unique specifications. Section \ref{FillingFile} on page \pageref{FillingFile} will help you do this. Make sure you also read section \ref{ThesisConventions} about thesis conventions to get the most out of this template.
+As necessidades de sono variam ao longo da vida e entre indivíduos. As recomendações de duração refletem diferenças entre grupos etários: segundo o CDC (2024), são recomendadas 11 a 14 horas diárias para crianças entre um e dois anos e 10 a 13 horas entre os três e os cinco anos, incluindo sestas. Para crianças entre os seis e os doze anos, a recomendação é de 9 a 12 horas, enquanto para adolescentes entre os treze e os dezassete anos é de 8 a 10 horas. Nos adultos entre os dezoito e os sessenta anos, são recomendadas sete ou mais horas por noite. Estes intervalos constituem referências populacionais que devem ser interpretadas considerando as características individuais (Hirshkowitz et al., 2015; Watson, Badr, et al., 2015).
 
-If you are new to \LaTeX{} it is recommended that you carry on reading through the rest of the information in this document.
+Outra dimensão da variabilidade individual é o cronótipo, relacionado com a expressão temporal dos ritmos circadianos e com a tendência para horários de sono e vigília mais precoces ou mais tardios. Esta variação distribui-se ao longo de um contínuo. Num estudo populacional, Fischer et al. (2017) identificaram diferenças de cronótipo associadas à idade e ao sexo, observando uma tendência para horários mais tardios durante a adolescência e mais precoces nas idades seguintes.
 
-\subsection{About this Template}
+Os horários de sono observados resultam também da interação entre características biológicas e condições de vida, incluindo exigências profissionais, compromissos sociais e exposição à luz. Por conseguinte, o horário efetivamente praticado pode diferir da tendência temporal do indivíduo, tornando necessária a interpretação dos registos no respetivo contexto (Fischer et al., 2017; NHLBI).
 
-This \LaTeX{} Thesis Template is originally based and created around a \LaTeX{} style file created by Steve R.\ Gunn from the University of Southampton (UK), department of Electronics and Computer Science. You can find his original thesis style file at his site, here:
-\url{http://www.ecs.soton.ac.uk/~srg/softwaretools/document/templates/}
+No contexto desta dissertação, estes fundamentos orientam a consideração de múltiplas dimensões na caracterização do sono. A duração, a continuidade, a regularidade e o horário, articulados com as características e o contexto do utilizador, constituem elementos a explorar na análise dos padrões individuais e na conceção do sistema de apoio à intervenção.
 
-Steve's \file{ecsthesis.cls} was then taken by Sunil Patel who modified it by creating a skeleton framework and folder structure to place the thesis files in. The resulting template can be found on Sunil's site here:
-\url{http://www.sunilpatel.co.uk/thesis-template}
+\section{Insónia e dificuldades de sono} 
+\label{sec:chap2_insomnia} %For referencing this section elsewhere
 
-Sunil's template was made available through \url{http://www.LaTeXTemplates.com} where it was modified many times based on user requests and questions. Version 2.0 and onwards of this template represents a major modification to Sunil's template and is, in fact, hardly recognisable. The work to make version 2.0 possible was carried out by \url{mailto:vel@latextemplates.com} {Vel} and Johannes Böttcher.
+As dificuldades de sono podem manifestar-se através de problemas em adormecer, despertares durante a noite, despertar precoce ou insatisfação com o sono obtido. Estas manifestações podem ocorrer pontualmente ou apresentar um padrão persistente. A sua interpretação exige considerar a frequência, a duração, as circunstâncias em que surgem e as repercussões no funcionamento diário (Riemann et al., 2023).
 
-Vel's and Böttcher template was adapted to fit the TMDEI/ISEP dissertation formatting specifications. This adaptation was done by Nuno Pereira (nap@isep.ipp.pt) and Paulo Baltarejo (pbs@isep.ipp.pt) in December 2015. It was also based on the specifications earlier defined by Fátima Rodrigues (mfc@isep.ipp.pt).
-%----------------------------------------------------------------------------------------
+Atualmente, existem várias perturbações que afetam a qualidade do sono, sendo a insónia, apneia obstrutiva do sono (AOS) e o síndrome das pernas inquietas (SPI) das mais comuns a nível mundial (McArdle et al., 2022). 
 
-\section{What this Template Includes}
+\subsection{Conceito e manifestações da insónia}
+\label{sec:chap2_insomniaManifest}
 
-\subsection{Folders}
+A insónia caracteriza-se por dificuldades em iniciar ou manter o sono, ou por despertar antes do horário pretendido com dificuldade em voltar a adormecer. Estas dificuldades ocorrem apesar de existir oportunidade e condições adequadas para dormir e estão associadas a insatisfação com o sono e comprometimento do funcionamento diurno (Riemann et al., 2023).
 
-This template is composed of several files and folders. The folder names are mostly self-explanatory:
+A caracterização da insónia crónica considera a persistência das dificuldades noturnas e das consequências diurnas, com uma frequência de pelo menos três vezes por semana durante, pelo menos, três meses. Estes elementos integram uma avaliação clínica mais ampla, que considera outras condições capazes de explicar ou acompanhar as queixas (Riemann et al., 2023).
 
-\keyword{frontmatter} -- this is the folder holding the \file{frontmatter.tex} where are defined the dedicatory, abstract, acknowledgement, contents pages, list of figures, tables and others.
+Podem também ocorrer dificuldades de curta duração, por exemplo devido a situações de elevado stress ou alterações de rotinas e dos horários. A existência de algumas noites de sono insatisfatórias não equivale, por si só, a uma perturbação de insónia crónica (NHLBI).
 
-\keyword{ch1, ch2, ...} -- these are the folders where you put the contents of each chapter. Each chapter should go in its own separate folder. Inside each chapter folder there is one (or more) \keyword{.tex} with the contents of the chapter, and an \keyword{assets} folder which contains the figures and other graphical elements of the chapter (such as algorithms, source code, plots, ...).
+Importa igualmente distinguir insónia de sono insuficiente por falta de oportunidade para dormir. Uma pessoa pode dormir poucas horas devido aos seus compromissos, sem apresentar dificuldade em adormecer quando dispõe de oportunidade adequada. Por isso, a duração do sono, isoladamente, é insuficiente para caracterizar a insónia; devem ser consideradas as queixas, as condições de sono e as repercussões diurnas (Riemann et al., 2023).
 
-\keyword{appendices} -- this is the folder where you put the appendices. Each appendix should go into its own separate \file{.tex} file. An example and template are included in the directory.
+\subsection{Prevalência e relevância epidemiológica}
+\label{sec:chap2_prevalencia}
 
-\keyword{build} -- this is the folder where the output of building your document is put. Everytime you build your document,
- \LaTeX{} creates a number of auxiliary files that are written to this folder. These auxiliary files can be ignored or deleted as \LaTeX{} and BibTeX will regenerate them\footnote{Some changes require rebuilding temporary files again; actually, a document with citations may require up to three passes. For this reason, we recommend using the included \keyword{Makefile} which deals with such details}. Note that the resulting \file{pdf} file is written to this folder and then copied to the root folder of the template.
+A interpretação da prevalência da insónia exige atenção às definições e aos métodos utilizados. Estudos que avaliam sintomas ocasionais, resultados de questionários ou perturbações clinicamente caracterizadas podem produzir estimativas diferentes. Consequentemente, os valores devem ser apresentados em conjunto com a população e os critérios considerados.
 
-\subsection{Files}
+Benjafield et al. (2025) estimaram uma prevalência global de insónia clinicamente relevante de 16,2\% na população adulta, correspondente a aproximadamente 852 milhões de pessoas. A análise incluiu 18 estudos, com 262 582 participantes, e extrapolou estimativas para países sem dados nacionais adequados. O estudo identificou uma prevalência superior no sexo feminino. Estes resultados evidenciam a dimensão do problema, devendo ser interpretados à luz da heterogeneidade das definições e da disponibilidade desigual de dados entre países. Também cerca de 25\% das crianças e 18\% de adolescentes sofrem de insónia (Trosman \& Ivanenko, 2021).
 
-Included are also several files, most of them are plain text and you can see their contents in a text editor. After initial compilation, you will see that more auxiliary files are created by \LaTeX{} or BibTeX and which you don't need to delete or worry about\footnote{Note that some changes (such as changing the language of the template require deleting some of these temporary files) the included \keyword{Makefile} has a \keyword{clean} rule to do this automatically}:
+No contexto português, Oliveira et al. (2024) analisaram dados de 14 341 adultos provenientes do Inquérito Nacional de Saúde de 2019. Os autores identificaram uma prevalência de 42,9\% de dificuldades de sono autorreportadas, superior nas mulheres. A medida baseou-se numa pergunta sobre dificuldade em adormecer, dormir pouco ou dormir demasiado nas duas semanas anteriores. Este valor caracteriza um conjunto amplo de queixas e não corresponde à prevalência de insónia clinicamente diagnosticada.
 
-\keyword{main-bibliography.bib} -- this is an important file that contains all the bibliographic information and references that you will be citing in the thesis for use with BibTeX. You can write it manually, but there are reference manager programs available that will create and manage it for you. Bibliographies in \LaTeX{} are a large subject and you may need to read about BibTeX before starting with this (check, for example: \url{http://www.bibtex.org/Using/}). Many modern reference managers will allow you to export your references in BibTeX format which greatly eases the amount of work you have to do.
+\subsection{Fatores envolvidos no desenvolvimento e manutenção da insónia}
+\label{sec:chap2_fatoresInsonia}
 
-\keyword{tmdei-style.cls} -- this is an important file. It is the class file that tells \LaTeX{} how to format the thesis. 
+O desenvolvimento e a persistência da insónia podem ser compreendidos através do modelo dos três fatores, também conhecido como modelo dos 3P. Este enquadramento distingue fatores predisponentes, precipitantes e perpetuantes, permitindo organizar a influência de características individuais, acontecimentos desencadeantes e processos que mantêm as dificuldades ao longo do tempo (Spielman et al., 1987).
 
-\keyword{main.pdf} -- this is your beautifully typeset thesis (in the PDF file format) created by \LaTeX{}. It is supplied in the PDF with the template and after you compile the template you should get an identical version.
+Os fatores predisponentes correspondem a características que aumentam a vulnerabilidade às dificuldades de sono. Os fatores precipitantes representam acontecimentos ou alterações que podem desencadear essas dificuldades, como situações de stress. Os fatores perpetuantes incluem comportamentos e processos cognitivos que contribuem para a sua manutenção, mesmo depois de o acontecimento inicial ter diminuído ou desaparecido (Spielman et al., 1987).
 
-\keyword{main.tex} -- this is an important file. This is the file that you tell \LaTeX{} to compile to produce your thesis as a PDF file. It contains the framework and constructs that tell \LaTeX{} how to layout the thesis. It is heavily commented so you can read exactly what each line of code does and why it is there. After you put your own information into the \emph{THESIS INFORMATION} block -- you have now started your thesis!
+Neste enquadramento, estratégias adotadas para compensar noites insatisfatórias podem, em determinadas circunstâncias, contribuir para a persistência do problema. Um exemplo é o aumento excessivo do tempo passado na cama, que pode favorecer períodos prolongados de vigília nesse contexto. A preocupação com o sono e as associações estabelecidas entre a cama e a experiência de permanecer acordado constituem igualmente aspetos relevantes para compreender a manutenção das dificuldades (Spielman et al., 1987).
 
-\keyword{Makefile} -- this is an important file. This file describes the steps that need to be taken to transform the \keyword{main.tex} into a PDF file. It uses the command \keyword{latexmk} which knows how to properly build a \LaTeX{} source file. To use it, open a command line and type \keyword{make} in the base folder of the template. You can also remove temporary files with \keyword{make clean}. 
+A identificação destes fatores constitui uma base conceptual importante para a \textbf{Terapia Cognitivo-Comportamental} para a Insónia, cuja intervenção incide particularmente nos processos que perpetuam o problema (Walker et al., 2022).
 
-\keyword{latexmk.rc} -- this file is required to appropriately build documents with glossaries using \keyword{latexmk}. Essentially, it tells \keyword{latexmk} that it also needs to run the command  \keyword{makeglossaries} to build the document.
 
-\subsection{Building the Document}
+\subsection{Distinção face a outras dificuldades e perturbações do sono}
+\label{sec:chap2_outrasDificuladades}
 
-To build the document and create a \file{pdf} file from the \LaTeX{} source, you need to invoke several commands that will compile your document, bibliography, and glossaries. We recommend that you build the document automatically, using the \keyword{Makefile} provided.
+Algumas manifestações associadas à insónia podem também ocorrer noutras condições. A apneia obstrutiva do sono caracteriza-se por episódios de obstrução das vias aéreas superiores durante o sono, que reduzem ou interrompem o fluxo de ar. Pode acompanhar-se de ressonar, pausas respiratórias e sonolência diurna, comprometendo a continuidade e a qualidade do sono (NHLBI).
 
-The \keyword{Makefile} can be used by invoking the command \keyword{make}:
+A síndrome das pernas inquietas caracteriza-se por uma necessidade intensa de mover as pernas, frequentemente acompanhada por sensações desagradáveis. Os sintomas surgem ou agravam-se em repouso, tendem a ser mais intensos ao final do dia ou durante a noite e são temporariamente aliviados pelo movimento. Estas manifestações podem dificultar o adormecimento e a continuidade do sono (National Institute of Neurological Disorders and Stroke [NINDS]).
+
+As diferenças entre estas condições mostram que uma queixa de sono insatisfatório pode ter diferentes explicações. No contexto desta dissertação, a delimitação da população e das dificuldades abrangidas pela aplicação deverá refletir essa diversidade, articulando o apoio à CBT-I com critérios de avaliação e acompanhamento apropriados.
+
+\subsection{Impacto no funcionamento diário e no bem-estar}
+\label{sec:chap2_impacto}
+
+As consequências da insónia ultrapassam o período noturno. Podem incluir fadiga, dificuldades de atenção ou concentração, irritabilidade e redução da energia, afetando o desempenho das atividades quotidianas. A presença destas repercussões constitui uma dimensão importante da caracterização do problema e da avaliação das necessidades da pessoa (NHLBI; Walker et al., 2022).
+
+Na perspetiva da terapia ocupacional, o sono integra o domínio das ocupações, entendidas como as atividades que fazem parte da vida quotidiana. A sua relação com o funcionamento diurno pode ser compreendida considerando as rotinas de autocuidado, o trabalho ou estudo, o lazer e a participação social. Ho e Siu (2018) salientam a importância de considerar conjuntamente a pessoa, o ambiente e a organização das atividades diárias na compreensão e intervenção sobre o sono.
+
+Esta perspetiva permite enquadrar o sono na distribuição do tempo e das atividades ao longo do dia. Ho e Siu (2018) destacam a organização das rotinas e dos padrões de atividade como componentes relevantes da intervenção, atendendo à relação entre as atividades diurnas e o sono. Deste modo, compreender as dificuldades de sono implica considerar o contexto quotidiano em que ocorrem e as necessidades individuais de participação nas diferentes atividades.
+
+A dimensão do bem-estar encontra-se igualmente refletida no estudo português de Oliveira et al. (2024), no qual as dificuldades de sono foram associadas a menor satisfação com a vida. Por se tratar de um estudo transversal, os resultados demonstram uma associação, sem estabelecer uma relação causal ou a sua direção.
+
+Para esta dissertação, este enquadramento fundamenta uma avaliação que articule as manifestações noturnas com a experiência subjetiva e o funcionamento diurno. Além dos indicadores de sono, será pertinente considerar a fadiga percebida, a interferência das dificuldades de sono nas atividades quotidianas e a adesão às atividades propostas pela aplicação. Esta abordagem poderá contribuir para compreender a utilidade do sistema na perspetiva do utilizador, complementando a análise dos padrões de sono.
+
+
+
+\section{Avaliação e monitorização do sono} 
+\label{sec:chap2_sleepMonitoring} %For referencing this section elsewhere
+
+A avaliação do sono permite caracterizar as dificuldades apresentadas, compreender os padrões individuais e acompanhar alterações ao longo do tempo. No contexto da insónia, devem ser consideradas as manifestações noturnas, a satisfação com o sono e as repercussões no funcionamento diurno. A avaliação clínica pode ser apoiada por questionários, diários de sono e, quando indicado, métodos instrumentais, como a actigrafia e a polissonografia (Riemann et al., 2023).
+
+Estes métodos fornecem informação de natureza distinta. Os instrumentos de autorrelato permitem conhecer a experiência percebida pela pessoa, enquanto os dispositivos recolhem sinais a partir dos quais podem ser medidos ou estimados parâmetros do sono. A interpretação deve, por isso, atender ao que cada método avalia e às suas limitações.
+
+
+\subsection{Questionários de avaliação do sono e da insónia}
+\label{sec:chap2_questionarioSono}
+
+Os questionários permitem organizar e quantificar diferentes dimensões das dificuldades de sono. Entre os instrumentos utilizados encontram-se o Pittsburgh Sleep Quality Index (PSQI), dirigido à qualidade do sono, e o Insomnia Severity Index (ISI), centrado na gravidade percebida da insónia.
+
+O PSQI avalia a qualidade e as dificuldades de sono durante o mês anterior. Inclui 19 itens de autorresposta que originam sete componentes: qualidade subjetiva do sono, latência de adormecimento, duração, eficiência habitual, perturbações do sono, utilização de medicação para dormir e disfunção diurna. A pontuação global varia entre 0 e 21, correspondendo os valores mais elevados a maiores dificuldades (Buysse et al., 1989).
+
+Este instrumento proporciona uma caracterização abrangente, mas não constitui uma medida específica da perturbação de insónia nem permite, isoladamente, estabelecer esse diagnóstico (Riemann et al., 2023).
+
+O ISI constitui um instrumento breve desenvolvido para avaliar a gravidade da insónia e acompanhar os resultados do tratamento (Bastien et al., 2001). Integra sete itens relativos às dificuldades em iniciar e manter o sono, ao despertar precoce, à satisfação com o sono, à interferência no funcionamento diário, à perceção do problema por outras pessoas e à preocupação associada. O período habitual de referência corresponde às duas semanas anteriores. Cada item é pontuado entre 0 e 4, resultando numa pontuação global entre 0 e 28, com valores superiores a indicar maior gravidade percebida (Morin et al., 2011).
+
+A escolha entre estes instrumentos depende da dimensão que se pretende avaliar. Para esta dissertação, o PSQI poderá apoiar a caracterização geral da qualidade do sono, enquanto o ISI poderá ser considerado para acompanhar a evolução dos sintomas de insónia. A calendarização das avaliações deverá respeitar os períodos de referência dos instrumentos, distinguindo-os dos registos diários.
+
+\subsection{Diário de sono e indicadores de acompanhamento}
+\label{sec:chap2_diarioSono}
+
+O diário de sono consiste no registo prospetivo de informação sobre cada episódio de sono. O Consensus Sleep Diary, apresentado por Carney et al. (2012), procura uniformizar os elementos recolhidos e as instruções de preenchimento, favorecendo a comparação dos registos. Inclui horários, estimativas de adormecimento e despertares, bem como uma apreciação subjetiva da qualidade do sono.
+
+A orientação europeia recomenda que a avaliação da insónia seja apoiada por um diário preenchido durante um período de 7 a 14 dias (Riemann et al., 2023). A recolha de várias noites permite observar a variabilidade dos padrões, complementando uma apreciação global.
+
+Entre os indicadores habitualmente considerados encontram-se os seguintes (Carney et al., 2012):
 \begin{itemize}
-\item \code{make} -- Builds the document using the command \keyword{latexmk} which knows how to properly build a \LaTeX{} source file;
-\item \code{make clean} -- Deletes auxiliary files using the command \keyword{latexmk} which knows the files created every time the document is built;
-\item \code{make clean-all} -- Deletes all auxiliary files and bibliography cache.
+	\item Latência de adormecimento (SOL) - Tempo estimado entre a tentativa de adormecer e o início do sono;
+	\item Vigília após o início do sono (WASO) - Tempo de vigília acumulado após o adormecimento, segundo a convenção adotada;
+	\item Tempo total de sono (TST) - Duração total estimada do sono;
+	\item Tempo na cama (TIB) - Intervalo passado na cama, segundo os horários registados;
+	\item Eficiência do sono (SE) - Percentagem do tempo na cama que corresponde a sono;
+	\item Qualidade subjetivo do sono - Apreciação da pessoa sobre o sono dessa noite.
 \end{itemize}
 
-\subsubsection*{Manually Building the Document}
+A eficiência do sono pode ser expressa por:
 
-The general process of building the document is as follows. You can execute these commands to manually build your document. This can be convenient also for debug purposes, should you encounter any problem.
+\(Eficiência do Sono (\%) = (\frac{TST}{TIB}) * 100\)
 
-\begin{enumerate}
-  \item \code{pdflatex -aux-directory=build -output-directory=build main} -- The command \keyword{pdflatex} writes all \verb|\cite{...}| arguments to an auxiliary file.
+\section{Terapia Cognitivo-Comportamental para a Insónia} 
+\label{sec:chap2_tcc} %For referencing this section elsewhere
 
-  \item \code{biber -input-directory=build -output-directory=build main} -- The command \keyword{biber}, processes the previously created auxiliary file and the bibliography is produced.
+Na intervenção no sono, o papel da Terapia Ocupacional pode estar presente de diversas formas, tais como a adaptação do ambiente, estabelecer novas rotinas antes de dormir ou ainda a utilização de produtos de apoio (Faulkner, 2022; Ho \& Siu, 2018). Para além disso, é importante destacar a Terapia Cognitivo-Comportamental para a Insônia (TCCi) como ferramenta de intervenção nesta área (Faulkner, 2022; Ho \& Siu, 2018). Este método de intervenção procura atuar sobre comportamentos e fatores mal adaptativos impulsionadores da insônia, através de diferentes fases, como limitar o tempo passado na cama, evitar realizar atividades na cama que não estejam relacionadas com o sono, terapia cognitiva e educação terapêutica sobre higiene do sono. De notar que a TCCi apresenta uma eficácia tão elevada quanto a intervenção farmacológica, uma vez que é considerada o tratamento de primeira linha desta condição. Contudo, é importante referir que a eficácia da intervenção está condicionada pela colaboração e envolvimento do paciente (Faulkner, 2022; Ho \& Siu, 2018; Walker et al., 2022).
 
-  \item \code{makeglossaries -d build main} -- The command \keyword{makeglossaries}, goes through the document to process the \verb|\gls{...}| commands.
+\section{Intervenções digitais e personalização} 
+\label{sec:chap2_digitalInterventions} %For referencing this section elsewhere
 
-  \item \code{pdflatex -aux-directory=build -output-directory=build main} -- \keyword{pdflatex} is run again to include the bibliography, and write the correct labels in the auxiliary file.
-
-  \item \code{pdflatex -aux-directory=build -output-directory=build main} -- \keyword{pdflatex} is run once again, to include the labels and produce the final document.
-\end{enumerate}
-
-The above commands should be executed in the root folder of the template. Note that some of the commands might be omitted if the necessary auxiliary files were constructed previously, and no changes that require the auxiliary files to be rebuilt were made.
-
-%----------------------------------------------------------------------------------------
-
-\section{Filling in Your Information in the \file{main.tex} File}\label{FillingFile}
-
-You will need to personalise the thesis template and make it your own by filling in your own information. This is done by editing the \file{main.tex} file in a text editor or your favourite LaTeX environment.
-
-Open the file and scroll down to the second large block titled \emph{THESIS INFORMATION} where you can see the entries for \emph{Thesis Title}, \emph{Author}, etc \ldots
-
-Fill out the information about your work, yourself, your supervisor(s) and institution. You can also insert web links, if you do, make sure you use the full URL, including the \code{http://} for this. If you don't want these to be linked, simply remove the \verb|\href{url}{name}| and only leave the name.
-
-When you have done this, save the file and recompile \code{main.tex}. All the information you filled in should now be in the PDF, complete with web links. You can now begin your thesis proper!
-
-%----------------------------------------------------------------------------------------
-
-\section{The \code{main.tex} File Explained}
-
-The \file{main.tex} file contains the structure of the thesis. There are plenty of written comments that explain what pages, sections and formatting the \LaTeX{} code is creating. Each major document element is divided into commented blocks with titles in all capitals to make it obvious what the following bit of code is doing. Initially there seems to be a lot of \LaTeX{} code, but this is all formatting, and it has all been taken care of so you don't have to do it.
-
-Begin by checking that your information on the title page is correct. It can be changed by editing the block titled \emph{THESIS INFORMATION} in \file{main.tex}. 
-
-After the title page, the frontmatter is included. The frontmatter includes the dedicatory, abstract, acknowledgement, contents pages, list of figures and tables. The frontmatter is further detailed in Section~\ref{sec:frontmatter}.
-
-Then, there is the block where the chapters are included. Uncomment the lines (delete the \code{\%} character) as you write the chapters. Each chapter should be written in its own folder (\file{ch1}, \file{ch2}, etc\ldots), in a file named \file{Chapter1.tex}, \file{Chapter2.tex}, etc\ldots Similarly for the appendices, uncomment the lines as you need them. Each appendix should go into its own file and placed in the \emph{appendices} folder.
-
-Finally comes the bibliography. The bibliography style (called \option{authoryear-ibid}) is used for the bibliography as it is very similar to the recommended Harvard citation style. This is fully a featured style that will even include links to where the referenced paper can be found online. Do not underestimate how grateful your reader will be to find that a reference to a paper is just a click away. Of course, this relies on you putting the URL information into the BibTeX file in the first place.
-
-\section{Front Matter (\code{frontmatter/frontmatter.tex})}
-\label{sec:frontmatter}
-
-The frontmatter starts with the Dedication Section, where you can insert your dedication. Who will you dedicate your thesis to?
-
-Following this, the abstract page summarises your work in a condensed way and can almost be used as a standalone document to describe what you have done. The text you write will cause the heading to move up so don't worry about running out of space. All dissertations should include abstracts in English and Portuguese.
-
-Next come the acknowledgements. On this page, write about all the people who you wish to thank (not forgetting parents, and consider including partners and/or your advisor(s)/supervisor(s)).
-
-The contents pages, list of figures, tables, algorithms and source code are all taken care of for you and do not need to be manually created or edited. Any of the commands in this section must be removed (or commented) if there are no elements in the document to list (for example, if there are no algorithms in the document, remove the \verb|\listofalgorithms| command; if there are no source code listings, remove the \verb|\listoflisting| command).
-
-Next you have a list of abbreviations used in the thesis, then a list of the physical constants and numbers you refer to and finally, a list of mathematical symbols used in any formulae. You can omit these tables, but making the effort to fill these tables means the reader has a one-stop place to refer to instead of searching the internet and references to try and find out what you meant by certain abbreviations or symbols.
-
-The list of symbols is split into the Roman and Greek alphabets. Whereas the abbreviations and symbols ought to be listed in alphabetical order (and this is \emph{not} done automatically for you) the list of physical constants should be grouped into similar themes.
-
-%----------------------------------------------------------------------------------------
-
-\section{Thesis Features and Conventions}\label{ThesisConventions}
-
-To get the best out of this template, there are a few conventions that you may want to follow.
-
-One of the most important (and most difficult) things to keep track of in such a long document as a thesis is consistency. Using certain conventions and ways of doing things (such as using a Todo list) makes the job easier. Of course, all of these are optional and you can adopt your own method.
-
-\subsection{Printing Format}
-
-This thesis template is designed for double sided printing (i.e. content on the front and back of pages) as most theses are printed and bound this way. Switching to one sided printing is as simple as uncommenting the \option{oneside} option of the \code{documentclass} command at the top of the \file{main.tex} file. You may wish to use this option for drafting purposes, but remember that the final document should be double sided.
-
-The headers for the pages contain the page number on the outer side (so it is easy to flick through to the page you want) and the chapter name on the inner side.
-
-The text is set to 11 point by default with single line spacing, again, you can tune the text size and spacing should you want or need to using the options at the very start of \file{main.tex}. The spacing can be changed similarly by replacing the \option{singlespacing} with \option{onehalfspacing} or \option{doublespacing}. Remember again, that the default spacing and font size should be used for the final document.
-
-\subsection{References}
-
-The \code{biblatex} package is used to format the bibliography and inserts references such as this one \parencite{Reference1}. The options used in the \file{main.tex} file mean that the in-text citations of references are formatted with the author(s) listed with the date of the publication. Multiple references are separated by semicolons (e.g. \parencite{Reference2, Reference1}) and references with more than three authors only show the first author with \emph{et al.} indicating there are more authors (e.g. \parencite{Reference3}). This is done automatically for you. To see how you use references, have a look at the \file{Chapter2.tex} source file. Many reference managers allow you to simply drag the reference into the document as you type.
-
-Scientific references should come \emph{before} the punctuation mark if there is one (such as a comma or period). The same goes for footnotes\footnote{Such as this footnote, here down at the bottom of the page.}. You can change this but the most important thing is to keep the convention consistent throughout the document. Footnotes themselves should be full, descriptive sentences (beginning with a capital letter and ending with a full stop). 
-
-The bibliography is typeset with references listed in alphabetical order by the first author's last name. This is similar to the Harvard referencing style. To see how \LaTeX{} typesets the bibliography, have a look at the very end of this document (or just click on the reference number links in in-text citations).
-
-\subsubsection*{More citation examples}
-
-\begin{enumerate} \item A citation command \verb!\parencite{Reference1}! results in a citation in parentheses: \parencite{Reference1}. 
-\item A citation command \verb!\textcite{Reference2}!, can used in the flow of text: As \textcite{Reference2} said \dots 
-\item A citation command \verb!\autocite{Reference3}! automatically switches style depending on location and the option setting in the package declaration. In this case, it produces a citation in parentheses: \autocite{Reference3}. \end{enumerate}
-
-\subsubsection*{A Note on bibtex}
-
-By default, the template uses \keyword{biber} as the backend to process references, instead of \keyword{bibtex}. This is because \keyword{bibtex} does not correctly handle unicode character encoding (i.e. "non-english" characters). You can change this back to  \keyword{bibtex} by finding this in \file{main.tex}: \option{backend=biber} and changing it to \option{backend=bibtex}. You will then need to delete all auxiliary files and navigate to the template directory in your terminal (command prompt). Once there, simply type \code{bibtext main} to compile your bibliography. You can then compile \file{main.tex} as normal and your bibliography will be updated. Alternatively, you can invoke \code{make clean; make}.
-
-\subsection{Tables}
-
-Tables are an important way of displaying your results, Table~\ref{tab:treatments} is an example table which was generated with this code:
-
-{\small
-\begin{verbatim}
-\begin{table}
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
-\centering
-\begin{tabular}{l l l}
-\toprule
-\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\midrule
-1 & 0.2 & 0.8\\
-2 & 0.17 & 0.7\\
-3 & 0.24 & 0.75\\
-4 & 0.68 & 0.3\\
-\bottomrule\\
-\end{tabular}
-\end{table}
-\end{verbatim}
-}
-
-\begin{table}
-\caption{The effects of treatments X and Y on the four groups studied.}
-\label{tab:treatments}
-\centering
-\begin{tabular}{l l l}
-\toprule
-\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\midrule
-1 & 0.2 & 0.8\\
-2 & 0.17 & 0.7\\
-3 & 0.24 & 0.75\\
-4 & 0.68 & 0.3\\
-\bottomrule\\
-\end{tabular}
-\end{table}
-
-You can reference tables with \verb|\ref{<label>}| where the label is defined within the table environment. See \file{Chapter2.tex} for an example of the label and citation (e.g. Table~\ref{tab:treatments}).
-
-\subsection{Figures}
-
-There will hopefully be many figures in your thesis (that should be placed in the \keyword{assets} folder of the repective chapter). The way to insert figures into your thesis is to use a code template like this:
-\begin{verbatim}
-\begin{figure}
-\centering
-\includegraphics{ch2/assets/electron}
-\decoRule
-\caption[An Electron]{An electron (artist's impression).}
-\label{fig:Electron}
-\end{figure}
-\end{verbatim}
-Also look in the source file. Note that the path is relative to the \file{main.tex} file location. Putting this code into the source file produces the picture of the electron that you can see in Figure~\ref{fig:electron}. 
-
-\begin{figure}[b]
-\centering
-\includegraphics[scale=0.5]{ch2/assets/electron}
-\caption[An Electron]{An electron (artist's impression).}
-\label{fig:electron}
-\end{figure}
-
-Sometimes figures don't always appear where you specify in the source. The placement depends on how much space there is on the page for the figure. Sometimes there is not enough room to fit a figure directly where it should go (in relation to the text) and so \LaTeX{} puts it at the top of the next page. In this case, the argument ("[b]") of the \verb|\begin{figure}[b]| command indicates that the Figure~\ref{fig:electron} should be on the bottom (for example, "t" would be used to place the figure on top). Figures consistently placed on top or bottom of the page usually make life easier for the reader. Note that positioning figures is the job of \LaTeX{} and so you should focus on making them look good! 
-
-Figures should have captions (such as in Figure~\ref{fig:electron}). The \verb|\caption| command contains two parts, the first part, inside the square brackets is the title that will appear in the \emph{List of Figures}, and so should be short. The second part in the curly brackets should contain the longer and more descriptive caption text. 
-
-You should also put a label (such as \verb|\label{fig:electron}|) in all your figures so you can refer to them (for example with \verb|\ref{fig:electron}|). {\bf All graphical elements in your document must have accompanying text (a paragraph, or a sentence) describing it!}
-
-Another example illustration is included in Figure~\ref{fig:comic}, which shows a comic about thesis writing.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\textwidth,keepaspectratio]{ch2/assets/comic}
-\caption[Thesis Writing Comic]{A Thesis Writing Comic (from www.phdcomics.com).}
-\label{fig:comic}
-\end{figure}
-
-\LaTeX{} is capable of using images in pdf, jpg and png format.
-
-\subsection{Other Useful Commands}
-
-There are some additional commands created to keep the formatting separated from the content, which we document below.
-
-\keyword{keyword} -- Used to highlight keywords. For example, this is \keyword{somekeyword} (the command that produces this output is \verb|\keyword{somekeyword}|).
-
-\keyword{tabhead} -- Used to highlight table headers. 
-
-\keyword{code} -- Used to output code. For example, this \code{statement is formatted as code} (the command that produces this output is \verb|\code{...}|).
-
-\keyword{file} -- Used to highlight files. For example, this is \file{somefilename} (the command that produces this output is \verb|\file{somefilename}|).
-
-\keyword{option} -- Used to highlight options. For example, this is \option{someoption} (the command that produces this output is \verb|\option{someoption}|).
-
-%----------------------------------------------------------------------------------------
-
-\section{Sectioning and Subsectioning}
-
-You should break your thesis up into nice, bite-sized sections and subsections. \LaTeX{} automatically builds a table of Contents by looking at all the \verb|\chapter{}|, \verb|\section{}|  and \verb|\subsection{}| commands you write in the source.
-
-The Table of Contents should only list the sections to three (3) levels. A \verb|chapter{}| is level zero (0). A \verb|\section{}| is level one (1) and so a \verb|\subsection{}| is level two (2). In your thesis it is likely that you will even use a \verb|subsubsection{}|, which is level three (3). The depth to which the Table of Contents is formatted is set within \file{tmdei-style.cls}. If you need this changed, you can do it in \file{main.tex}.
-
-%----------------------------------------------------------------------------------------
-
-\section{In Closing}
-
-You have reached the end of this mini-guide. You can now rename or overwrite this pdf file and begin writing your own \file{.tex} files and the rest of your thesis. The easy work of setting up the structure and framework has been taken care of for you. It's now your job to fill it out!
-
-Good luck and have lots of fun!
-
-\begin{flushright}
-Guide written by ---\\
-Sunil Patel: \url{http://www.sunilpatel.co.uk}{www.sunilpatel.co.uk}\\
-Vel: \url{http://www.LaTeXTemplates.com}{LaTeXTemplates.com}
-\end{flushright}
+O avanço tecnológico atual levou a um aumento no uso diário de dispositivos eletrónicos, especialmente durante o período noturno, o que pode prejudicar o sono devido à exposição à luz desses dispositivos (Grotto et al., 2024; Roland, 2023). No entanto, apesar desta tendência negativa, tecnologias como aplicações móveis podem ser uma solução eficaz para melhorar a qualidade do sono, uma vez que facilitam o acesso a informações sobre hábitos saudáveis e oferecem estratégias para problemas de sono (Chang et al., 2015; Grandner, 2022; Grotto et al., 2024; Lancaster et al., 2023; Orzech et al., 2016; Roland, 2023). Deste modo, vários estudos sugerem o potencial do mHealth como forma de intervenção para problemas de sono e de provocar mudanças comportamentais nos seus utilizadores (Arroyo \& Zawadzki, 2022; Grotto et al., 2024; Lancaster et al., 2023).
+ 
