@@ -37,4 +37,8 @@
 \contentsline {subsection}{\numberline {2.4.5}Adequação clínica e acompanhamento}{14}{subsection.53}%
 \contentsline {subsection}{\numberline {2.4.6}Implicações para a aplicação proposta}{14}{subsection.54}%
 \contentsline {section}{\numberline {2.5}Intervenções digitais e personalização}{14}{section.55}%
-\contentsline {chapter}{Appendix \numberline {A}Appendix Title Here}{15}{appendix.56}%
+\contentsline {subsection}{\numberline {2.5.1}Just-in-Time Adaptive Interventions (JITAI)}{14}{subsection.56}%
+\contentsline {subsection}{\numberline {2.5.2}Adesão e mitigação da ansiedade associada ao sono}{15}{subsection.57}%
+\contentsline {subsection}{\numberline {2.5.3}Segurança clínica e regulamentação (DTx)}{15}{subsection.58}%
+\contentsline {subsection}{\numberline {2.5.4}Implicações para a presente dissertação}{16}{subsection.59}%
+\contentsline {chapter}{Appendix \numberline {A}Appendix Title Here}{17}{appendix.60}%

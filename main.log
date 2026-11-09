@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  9 NOV 2026 19:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  9 NOV 2026 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1661,7 +1661,7 @@ Package biblatex Info: Reference segment=0 on input line 115.
 \openout9 = `main.glsdefs'.
 
 )
-<frontmatter/assets/isep_logo.pdf, id=162, 8130.375pt x 993.7125pt>
+<frontmatter/assets/isep_logo.pdf, id=178, 8130.375pt x 993.7125pt>
 File: frontmatter/assets/isep_logo.pdf Graphic file (type pdf)
 <use frontmatter/assets/isep_logo.pdf>
 Package pdftex.def Info: frontmatter/assets/isep_logo.pdf  used on input line 1
@@ -1877,17 +1877,21 @@ C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
 [12]
 
-[13]) (ch3/chapter3.tex)
+[13]
+
+[14]
+
+[15]) (ch3/chapter3.tex)
 
 LaTeX Warning: Empty bibliography on input line 142.
 
 (appendices/appendixA.tex
 
-[14]
+[16]
 Appendix A.
 )
 
-[15
+[17
 
 ] (main.aux)
  ***********
@@ -1895,19 +1899,19 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 564BADA9A410AF4BC1CC87E655BA8BD9;8588.
+(rerunfilecheck)             Checksum: 828E099AA5E55A3D3A69BB2D78E9C1C7;9774.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59379 strings out of 468130
- 1431120 string characters out of 5430632
- 2394799 words of memory out of 5000000
- 87091 multiletter control sequences out of 15000+600000
+ 59393 strings out of 468130
+ 1431347 string characters out of 5430632
+ 2395112 words of memory out of 5000000
+ 87099 multiletter control sequences out of 15000+600000
  696370 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,20n,131p,2475b,2900s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,20n,131p,2475b,2920s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb
@@ -1920,9 +1924,9 @@ ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Us
 ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Us
 ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Us
 ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb>
-Output written on main.pdf (37 pages, 390472 bytes).
+Output written on main.pdf (39 pages, 402698 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 330 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 505 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

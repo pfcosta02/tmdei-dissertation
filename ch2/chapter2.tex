@@ -277,8 +277,45 @@ O momento de entrega deverá também ser considerado em função da estratégia 
 A eficácia estabelecida para a TCC-I fundamenta a escolha desta abordagem, mas não demonstra antecipadamente o benefício adicional das notificações personalizadas ou da seleção automática do momento de intervenção. Esse contributo constitui uma questão de investigação da presente dissertação, a avaliar através do protótipo e do estudo proposto.
 
 
-\section{Intervenções digitais e personalização} 
-\label{sec:chap2_digitalInterventions} %For referencing this section elsewhere
+\section{Intervenções digitais e personalização}
+\label{sec:chap2_digitalInterventions}
 
-O avanço tecnológico atual levou a um aumento no uso diário de dispositivos eletrónicos, especialmente durante o período noturno, o que pode prejudicar o sono devido à exposição à luz desses dispositivos (Grotto et al., 2024; Roland, 2023). No entanto, apesar desta tendência negativa, tecnologias como aplicações móveis podem ser uma solução eficaz para melhorar a qualidade do sono, uma vez que facilitam o acesso a informações sobre hábitos saudáveis e oferecem estratégias para problemas de sono (Chang et al., 2015; Grandner, 2022; Grotto et al., 2024; Lancaster et al., 2023; Orzech et al., 2016; Roland, 2023). Deste modo, vários estudos sugerem o potencial do mHealth como forma de intervenção para problemas de sono e de provocar mudanças comportamentais nos seus utilizadores (Arroyo \& Zawadzki, 2022; Grotto et al., 2024; Lancaster et al., 2023).
+O avanço tecnológico atual conduziu a um aumento da utilização diária de dispositivos eletrónicos, cuja exposição à luz, especialmente durante o período noturno, pode prejudicar a qualidade do sono e a regulação circadiana (Chang et al., 2015; Grotto et al., 2024; Roland, 2023). Não obstante este efeito potencialmente negativo, as tecnologias móveis (\textit{mHealth}) assumem-se também como ferramentas promissoras e eficazes na promoção da saúde, facilitando o acesso a estratégias terapêuticas e a informação baseada em evidência (Arroyo \& Zawadzki, 2022; Lancaster et al., 2023).   
+
+No domínio do sono, a transição de uma terapia tradicional para um modelo digital levanta desafios científicos e tecnológicos. A eficácia da TCC-I digital não depende apenas da validade dos conteúdos clínicos, mas também da capacidade do sistema para envolver o utilizador, adaptar-se ao seu contexto e garantir a segurança ao longo do tratamento.   
+
+\subsection{Just-in-Time Adaptive Interventions (JITAI)}
+\label{sec:chap2_jitai}
+
+A personalização do apoio terapêutico em aplicações móveis pode ser enquadrada no modelo das \textit{Just-in-Time Adaptive Interventions} (JITAIs). Segundo Nahum-Shani et al. (2018), uma JITAI é concebida para fornecer o tipo e a quantidade de apoio adequados no momento exato em que o utilizador mais necessita e se encontra recetivo. Este paradigma contrasta com as intervenções estáticas, que dependem da proatividade do utilizador para aceder aos conteúdos.   
+
+O desenho de uma JITAI assenta em componentes fundamentais: os estados de vulnerabilidade ou oportunidade (momentos em que a intervenção é necessária e o utilizador está disponível), as variáveis de adaptação (dados históricos e contextuais, como o cansaço reportado ou os padrões de sono estimados), as opções de intervenção (o tipo de recomendação a enviar) e as regras de decisão (políticas que ditam quando e como intervir) (Klasnja et al., 2015; Nahum-Shani et al., 2018). A identificação correta destes momentos é crítica; uma notificação desajustada pode não só ser ignorada, como gerar frustração ou interromper o período de descanso (Pulantara et al., 2018).   
+
+Neste contexto, a utilização de algoritmos de Inteligência Artificial para substituir ou complementar regras de decisão fixas apresenta-se como uma via de investigação relevante para otimizar o instante de entrega e maximizar o benefício terapêutico.  
+
+
+\subsection{Adesão e mitigação da ansiedade associada ao sono}
+\label{sec:chap2_adesaoDigital}
+
+A adesão constitui um dos principais desafios das intervenções digitais em saúde. Na TCC-I, a eficácia do tratamento requer o cumprimento de rotinas de monitorização (como o preenchimento do diário de sono) e a aplicação continuada de estratégias comportamentais (Walker et al., 2022). Para promover a adesão, o sistema pode recorrer a mensagens de reforço positivo, lembretes inteligentes (com bloqueio automático durante o período de sono) e à visualização da evolução dos indicadores do utilizador.   
+
+Contudo, a gamificação aplicada ao sono exige precauções específicas. A implementação de mecanismos de recompensa baseados na continuidade ininterrupta de utilização, frequentemente designados por \textit{streaks} (sequências), não deve penalizar o utilizador. A pressão para manter uma pontuação elevada, associada ao receio de falhar as metas diárias, pode exacerbar a preocupação antecipatória com o sono e alimentar o ciclo de ansiedade e hiperativação que perpetua a insónia. Consequentemente, o \textit{design} da aplicação deve privilegiar a flexibilidade terapêutica, permitindo ao utilizador retomar o programa ao seu próprio ritmo.
+
+\subsection{Segurança clínica e regulamentação (DTx)}
+\label{sec:chap2_segurancaClinica}
+
+A transição de uma aplicação de bem-estar genérico para uma ferramenta de intervenção baseada em TCC-I aproxima o sistema do conceito de \textit{Digital Therapeutics} (DTx). Esta evolução exige a implementação de rigorosas salvaguardas clínicas e técnicas.   
+
+A componente de restrição ou compressão do tempo na cama, embora clinicamente validada, acarreta riscos se aplicada inadvertidamente a populações vulneráveis. Ajustes automáticos da janela de sono, orientados pelo algoritmo, devem incorporar regras de exclusão clínica (por exemplo, a identificação de risco de mania/hipomania, sonolência diurna excessiva, condução profissional ou epilepsia não controlada). Nestes cenários, a intervenção digital deve suspender ajustes restritivos e recomendar o encaminhamento imediato para avaliação clínica especializada.   
+
+A nível técnico e normativo, os dados recolhidos pelo diário e pelos \textit{wearables} constituem dados relativos à saúde, inserindo-se numa categoria especial de dados pessoais ao abrigo do Regulamento Geral de Proteção de Dados (RGPD). A arquitetura da solução deve garantir a limitação da recolha ao estritamente necessário, a transparência na utilização das métricas e a aplicação de medidas adequadas de segurança (criptografia, anonimização e funcionamento sem ligação constante à Internet). Adicionalmente, pelo facto de a aplicação fornecer recomendações terapêuticas individualizadas e estruturadas para o tratamento clínico da insónia, deve ser avaliado o seu eventual enquadramento regulamentar como Dispositivo Médico (MDR - \textit{Medical Device Regulation}), o que reforça a exigência de processos formais de validação clínica e segurança terapêutica (Aji et al., 2022).
+
+\subsection{Implicações para a presente dissertação}
+\label{sec:chap2_implicacoesDigitais}
+
+Os fundamentos teóricos expostos ao longo deste capítulo suportam a premissa de que a insónia é uma perturbação complexa, multicausal e que a TCC-I presencial constitui a intervenção de primeira linha. Todavia, a evidência sublinha que a simples transposição de instruções clínicas para um formato móvel é insuficiente se não forem tidas em conta as dinâmicas de adesão, os constrangimentos do método de recolha de dados e a necessidade de adaptação ao momento.   
+
+A arquitetura tecnológica proposta deverá, portanto, conciliar o conhecimento clínico sobre o sono com mecanismos avançados de Engenharia de Software e Inteligência Artificial. O desafio central que motiva esta investigação não reside em comprovar genericamente a eficácia da TCC-I, mas sim em desenvolver e avaliar um mecanismo tecnológico inovador capaz de decidir \textit{o quê}, \textit{como} e \textit{quando} notificar o utilizador, maximizando as janelas de oportunidade de intervenção sem comprometer a sua segurança clínica ou o seu repouso.   
+
+Este enquadramento teórico conduz diretamente à necessidade de explorar, no capítulo seguinte, as soluções existentes no estado da arte. A revisão da literatura abordará como o mercado e a investigação atual resolvem (ou negligenciam) a integração de \textit{wearables}, a personalização adaptativa e a segurança na entrega de conteúdos em saúde móvel.  
  
