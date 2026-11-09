@@ -26,6 +26,15 @@
 \contentsline {section}{\numberline {2.3}Avaliação e monitorização do sono}{8}{section.36}%
 \contentsline {subsection}{\numberline {2.3.1}Questionários de avaliação do sono e da insónia}{8}{subsection.37}%
 \contentsline {subsection}{\numberline {2.3.2}Diário de sono e indicadores de acompanhamento}{9}{subsection.38}%
-\contentsline {section}{\numberline {2.4}Terapia Cognitivo-Comportamental para a Insónia}{10}{section.39}%
-\contentsline {section}{\numberline {2.5}Intervenções digitais e personalização}{10}{section.40}%
-\contentsline {chapter}{Appendix \numberline {A}Appendix Title Here}{11}{appendix.41}%
+\contentsline {subsection}{\numberline {2.3.3}Polissonografia e actigrafia}{10}{subsection.39}%
+\contentsline {subsection}{\numberline {2.3.4}Monitorização através de smartwatches}{10}{subsection.40}%
+\contentsline {subsection}{\numberline {2.3.5}Integração das fontes de informação}{11}{subsection.41}%
+\contentsline {section}{\numberline {2.4}Terapia Cognitivo-Comportamental para a Insónia}{11}{section.42}%
+\contentsline {subsection}{\numberline {2.4.1}Fundamentos e objetivos da intervenção}{11}{subsection.43}%
+\contentsline {subsection}{\numberline {2.4.2}Principais componentes da TCC-I}{12}{subsection.44}%
+\contentsline {subsection}{\numberline {2.4.3}Organização do tratamento e adesão}{13}{subsection.51}%
+\contentsline {subsection}{\numberline {2.4.4}Evidência de eficácia}{13}{subsection.52}%
+\contentsline {subsection}{\numberline {2.4.5}Adequação clínica e acompanhamento}{14}{subsection.53}%
+\contentsline {subsection}{\numberline {2.4.6}Implicações para a aplicação proposta}{14}{subsection.54}%
+\contentsline {section}{\numberline {2.5}Intervenções digitais e personalização}{14}{section.55}%
+\contentsline {chapter}{Appendix \numberline {A}Appendix Title Here}{15}{appendix.56}%
