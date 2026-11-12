@@ -19,7 +19,7 @@ O capítulo começa por apresentar a estratégia de pesquisa e seleção dos tra
 \section{Estratégia de pesquisa e seleção dos trabalhos} 
 \label{sec:chap3_estrategiaPesquisa} %For referencing this section elsewhere
 
-A revisão encontra-se organizada em duas etapas: um levantamento exploratório inicial e a consolidação da pesquisa em bases bibliográficas e fontes institucionais. Esta organização permite identificar trabalhos de referência, ajustar os termos de pesquisa e estabelecer critérios para uma seleção consistente.
+A revisão encontra-se organizada em duas etapas: um levantamento exploratório inicial e a consolidação da pesquisa em bases bibliográficas e fontes institucionais. Esta organização permite identificar trabalhos de referência, ajustar os termos de pesquisa e estabelecer critérios para uma seleção consistente. Atendendo ao enquadramento da dissertação em Engenharia Informática, a análise incide particularmente na integração de dados, nos mecanismos computacionais de personalização e na avaliação dos sistemas. A evidência clínica é considerada para compreender a finalidade, os resultados e os limites de aplicação das soluções.
 
 O levantamento inicial foi realizado através de pesquisas na \textit{Web}, com consulta de publicações científicas e páginas institucionais. Foram exploradas combinações de termos relacionados com insónia, TCC-I digital, aplicações móveis, \textit{wearables}, personalização, inteligência artificial e intervenções adaptativas. Esta etapa permitiu identificar estudos relevantes e organizar os principais eixos da revisão, constituindo uma base para aprofundamento.
 
@@ -46,7 +46,9 @@ As expressões de pesquisa serão adaptadas à sintaxe e aos campos de cada base
 			Intervenções digitais e personalização & Insónia ou TCC-I; aplicações móveis ou intervenções digitais; personalização ou adaptação.                            \\ \midrule
 			Integração de \textit{wearables}       & Insónia ou TCC-I; \textit{smartwatch}, \textit{wearable} ou actigrafia; intervenção, tratamento ou \textit{feedback}. \\ \midrule
 			Seleção do momento de intervenção      & Sono ou insónia; JITAI, notificações adaptativas ou ensaios microaleatorizados.                                       \\ \midrule
-			Mecanismos computacionais              & Sono ou insónia; aprendizagem automática ou inteligência artificial; recomendação ou decisão de intervenção.          \\ \bottomrule
+			Mecanismos computacionais              & Sono ou insónia; aprendizagem automática ou inteligência artificial; recomendação ou decisão de intervenção.          \\ \midrule
+            Integração e qualidade dos dados       & Interfaces de programação, interoperabilidade, sincronização, latência, dados em falta e proveniência.                \\ \midrule
+            Avaliação tecnológica                  & Validação de modelos, comparação com regras de referência, fiabilidade, desempenho e usabilidade.                     \\ \bottomrule
 		\end{tabular}%
 	}
 \end{table}
@@ -60,6 +62,7 @@ A seleção será orientada pelos seguintes critérios de inclusão:
 \begin{itemize}
 	\item Estudos sobre intervenções digitais para a insónia ou dificuldades de sono relevantes para o âmbito da dissertação.
 	\item Trabalhos que descrevam componentes terapêuticas, mecanismos de personalização, integração de \textit{wearables} ou seleção do momento de intervenção.
+    \item Estudos tecnológicos que explicitem interfaces, processamento de dados, algoritmos de decisão ou métodos de avaliação pertinentes, mesmo quando ainda não apresentem resultados clínicos.
 	\item Estudos de validação de dispositivos cujos resultados sejam relevantes para a utilização dos dados nas decisões do sistema.
 	\item Orientações clínicas e documentos institucionais pertinentes para o enquadramento clínico, tecnológico ou nacional.	
 	\item Publicações com informação suficiente para identificar os métodos, o âmbito, os resultados ou as recomendações e as respetivas limitações.
@@ -70,9 +73,20 @@ Serão excluídos trabalhos sem relação direta com estes eixos, publicações 
 
 A seleção dos estudos decorrerá pela análise dos títulos e resumos, seguida de uma leitura mais pormenorizada dos trabalhos potencialmente relevantes. Os documentos institucionais serão avaliados através do seu título, finalidade e conteúdo. Serão registadas as fontes consultadas, as datas, as expressões utilizadas e as razões de exclusão dos trabalhos. Estes registos permitirão descrever o percurso de seleção de forma transparente.
 
-Os trabalhos serão classificados segundo a natureza da evidência. Os ensaios de eficácia serão distinguidos dos estudos de viabilidade, usabilidade, validação de dispositivos e protocolos de investigação. As revisões da literatura apoiarão o enquadramento e a identificação de estudos primários. As orientações clínicas e os documentos de posição serão utilizados para enquadrar as recomendações e os limites de aplicação. A documentação descritiva das soluções será utilizada para caracterizar funcionalidades e finalidades, distinguindo essas descrições da evidência de benefício clínico.
+Os trabalhos serão classificados segundo a natureza da evidência. Os ensaios de eficácia serão distinguidos dos estudos de viabilidade, usabilidade, validação de dispositivos e protocolos de investigação. Serão também identificados estudos de desenvolvimento de sistemas e de validação computacional, distinguindo resultados obtidos em dados previamente recolhidos de avaliações realizadas durante a utilização do sistema. As revisões da literatura apoiarão o enquadramento e a identificação de estudos primários. As orientações clínicas e os documentos de posição serão utilizados para enquadrar as recomendações e os limites de aplicação. A documentação descritiva das soluções será utilizada para caracterizar funcionalidades e finalidades, distinguindo essas descrições da evidência de benefício clínico.
 
-Para cada estudo selecionado, serão extraídos a população e a dimensão da amostra, o desenho do estudo, a duração, as componentes terapêuticas, a origem dos dados, o mecanismo de adaptação, a supervisão profissional, o comparador e os resultados. Será dada atenção à informação disponível no momento da decisão e à possibilidade de o desenho experimental isolar o contributo da personalização ou da temporização. Nos documentos institucionais, serão registados a entidade responsável, a versão, a data, a população abrangida e as recomendações relevantes.
+Para cada estudo selecionado, serão extraídos a população e a dimensão da amostra, o desenho do estudo, a duração, as componentes terapêuticas, a origem dos dados, o mecanismo de adaptação, a supervisão profissional, o comparador e os resultados. A extração tecnológica será organizada segundo os seguintes critérios:
+
+\begin{itemize}
+    \item \textbf{Arquitetura e integração:} componentes descritos, responsabilidades da aplicação e dos serviços externos, interfaces utilizadas e dependências de dispositivos ou plataformas.
+    \item \textbf{Dados e processamento:} sinais ou indicadores acessíveis, granularidade temporal, transformações, sincronização, proveniência e tratamento de registos incompletos ou inconsistentes.
+    \item \textbf{Mecanismo de decisão:} regras explícitas, modelos aprendidos a partir de dados, objetivos da previsão ou recomendação, ações disponíveis e participação humana.
+    \item \textbf{Disponibilidade temporal:} informação efetivamente acessível no momento da decisão e distinção entre análise retrospetiva e funcionamento durante a intervenção.
+    \item \textbf{Validação:} separação dos dados de treino e avaliação, independência entre participantes e períodos, métricas adequadas à tarefa e comparação com métodos de referência.
+    \item \textbf{Avaliação do sistema:} fiabilidade da integração, desempenho, consumo de recursos quando reportado, usabilidade e comportamento perante falhas.
+\end{itemize}
+
+Será dada atenção à possibilidade de o desenho experimental isolar o contributo da personalização ou da temporização. A qualidade de uma previsão, a adequação de uma recomendação e a melhoria clínica serão tratadas como resultados distintos. Nos documentos institucionais e técnicos, serão registados a entidade responsável, a versão ou data de consulta, o âmbito de aplicação e as recomendações relevantes. A ausência de descrição da arquitetura, do algoritmo ou do tratamento de falhas será assinalada como informação não reportada.
 
 A síntese será temática e comparativa. Quando uma característica não estiver suficientemente descrita, será assinalada como informação não reportada, evitando inferir a sua ausência. Esta abordagem permitirá relacionar as capacidades das soluções com a evidência que as sustenta e fundamentar o posicionamento da presente dissertação.
 
@@ -81,7 +95,7 @@ A síntese será temática e comparativa. Quando uma característica não estive
 \section{Soluções digitais para o sono e a insónia} 
 \label{sec:chap3_solucoesDigitais} %For referencing this section elsewhere
 
-As soluções digitais relacionadas com o sono apresentam diferentes finalidades, incluindo a disponibilização de programas terapêuticos, o apoio ao acompanhamento profissional, a monitorização e o acesso a conteúdos de relaxamento. A comparação deve considerar essas diferenças, identificando o que cada solução disponibiliza e que evidência sustenta a sua utilização.
+As soluções digitais relacionadas com o sono apresentam diferentes finalidades, incluindo a disponibilização de programas terapêuticos, o apoio ao acompanhamento profissional, a monitorização e o acesso a conteúdos de relaxamento. A comparação deve considerar essas diferenças, identificando o que cada solução disponibiliza e que evidência sustenta a sua utilização. Na perspetiva tecnológica, analisam-se os dados utilizados, o fluxo entre registo e resposta do sistema, a adaptação do apoio e o grau de transparência dos mecanismos descritos.
 
 Nesta secção, analisam-se aplicações e programas digitais identificados na pesquisa realizada para a presente dissertação. A caracterização baseia-se nos estudos e na documentação consultada, distinguindo as funcionalidades anunciadas pelos responsáveis das soluções dos resultados demonstrados em investigação. As categorias utilizadas podem sobrepor-se, uma vez que uma aplicação pode combinar monitorização, \textit{feedback} e conteúdos de apoio ao sono.
 
@@ -95,21 +109,21 @@ O ensaio incluiu 164 adultos e comparou a intervenção com uma condição de co
 
 \subsection*{SHUTi}
 
-O \textit{Sleep Healthy Using the Internet} (SHUTi) é um programa auto guiado e interativo organizado em seis módulos. Utiliza diários preenchidos pelo utilizador para acompanhar a evolução e adaptar recomendações, incluindo objetivos personalizados, \textit{feedback} gráfico e mensagens de apoio à adesão (Nazem et al., 2023).
+O \textit{Sleep Healthy Using the Internet} (SHUTi) é um programa autoguiado e interativo organizado em seis módulos. Utiliza diários preenchidos pelo utilizador para acompanhar a evolução e adaptar recomendações, incluindo objetivos personalizados, \textit{feedback} gráfico e mensagens de apoio à adesão (Nazem et al., 2023).
 
 Ritterband et al. (2017) avaliaram o programa num ensaio com 303 adultos com insónia crónica, comparando-o com um \textit{website} educativo. Os resultados favoreceram o SHUTi nos indicadores principais, com manutenção dos benefícios no seguimento de um ano.
 
-Nazem et al. (2023) estudaram posteriormente a intervenção em 231 veteranos, encontrando resultados favoráveis na gravidade da insónia. O SHUTi demonstra que a adaptação de recomendações com dados individuais já está presente em programas estabelecidos. Contudo, a comparação com educação estática avalia diferenças entre intervenções completas, sem isolar o efeito da personalização ou do momento de entrega.
+Nazem et al. (2023) estudaram posteriormente a intervenção em 231 veteranos, encontrando resultados favoráveis na gravidade da insónia. O SHUTi demonstra que a adaptação de recomendações com dados individuais já está presente em programas estabelecidos. O fluxo descrito relaciona o preenchimento do diário com a revisão das recomendações e a progressão modular, constituindo uma referência para analisar a relação entre dados de entrada e ações do sistema. Contudo, a comparação com educação estática avalia diferenças entre intervenções completas, sem isolar o efeito da personalização ou do momento de entrega.
 
 \subsection*{Headspace Sleep Program}
 
-O \textit{Headspace} deve ser analisado distinguindo os seus conteúdos gerais do \textit{Headspace Sleep Program}. Este programa integra técnicas de TCC-I e \textit{mindfulness} num percurso auto guiado de 18 sessões (Staiano et al., 2025).
+O \textit{Headspace} deve ser analisado distinguindo os seus conteúdos gerais do \textit{Headspace Sleep Program}. Este programa integra técnicas de TCC-I e \textit{mindfulness} num percurso autoguiado de 18 sessões (Staiano et al., 2025).
 
 Num ensaio com 132 adultos com insónia, o programa foi comparado com uma lista de espera. Foram observadas melhorias superiores nos sintomas de insónia e na eficiência do sono, avaliada através de diário e actigrafia. O comparador permite analisar o benefício face à espera, mas não estabelecer superioridade perante outro tratamento ativo (Staiano et al., 2025). A utilização de actigrafia na avaliação também não demonstra que esses dados tenham sido utilizados para adaptar o programa.
 
 Este trabalho justifica a inclusão do programa entre as intervenções estruturadas, evitando caracterizar toda a oferta do \textit{Headspace} exclusivamente como relaxamento.
 
-\subsection{Aplicações de apoio ao tratamento e auto cuidado}
+\subsection{Aplicações de apoio ao tratamento e autocuidado}
 
 \subsection*{CBT-i Coach}
 
@@ -119,7 +133,7 @@ A sua finalidade distingue-o de um programa autónomo: a aplicação apoia a imp
 
 \subsection*{Insomnia Coach}
 
-O \textit{Insomnia Coach} é apresentado como uma ferramenta de educação e auto cuidado, utilizável autonomamente ou como complemento ao acompanhamento profissional. Inclui um plano de treino de cinco semanas, diário interativo e \textit{feedback} sobre o sono (National Center for PTSD, 2026b).
+O \textit{Insomnia Coach} é apresentado como uma ferramenta de educação e autocuidado, utilizável autonomamente ou como complemento ao acompanhamento profissional. Inclui um plano de treino de cinco semanas, diário interativo e \textit{feedback} sobre o sono (National Center for PTSD, 2026b).
 
 A documentação esclarece que a aplicação não substitui os cuidados profissionais necessários e identifica situações que justificam consulta antes da utilização. Este exemplo evidencia a importância de comunicar o âmbito e os limites da ferramenta. A descrição institucional permite caracterizar as funcionalidades e a finalidade, mas deve ser distinguida de uma avaliação experimental dos seus resultados.
 
@@ -135,7 +149,7 @@ Esta funcionalidade interessa à análise de decisões temporais, mas tem uma fi
 
 O \textit{ShutEye} disponibiliza monitorização, relatórios e sugestões relacionadas com os resultados apresentados. O fabricante refere a utilização de um modelo de IA para produzir uma pontuação de qualidade do sono (ShutEye, s.d.).
 
-Para a dissertação, interessa analisar a passagem dos registos para o \textit{feedback} e as recomendações. Contudo, a referência comercial à IA não permite concluir que exista precisão superior ou benefício clínico demonstrado. Esses aspetos exigem validação específica.
+Para a dissertação, interessa analisar a passagem dos registos para o \textit{feedback} e as recomendações. Contudo, a referência comercial à IA não permite concluir que exista precisão superior ou benefício clínico demonstrado. Esses aspetos exigem validação específica. Para a análise tecnológica, importa identificar o alvo do modelo, os dados de entrada e o método de avaliação; a designação comercial de IA não permite reconstruir esses elementos.
 
 \subsection*{Pillow}
 
@@ -168,7 +182,7 @@ Também os conteúdos gerais de \textit{mindfulness} e apoio ao sono do \textit{
 
 A comparação das soluções permite identificar capacidades relevantes para o projeto e limitações que condicionam a sua utilização ou a interpretação dos resultados. A tabela seguinte distingue pontos fortes, limitações e contributos para a aplicação proposta.
 
-Os pontos fortes e as limitações referem-se às funcionalidades e aos estudos anteriormente apresentados. Quando a documentação não permite confirmar uma característica ou demonstrar um benefício, essa insuficiência de informação não deve ser interpretada como ausência da funcionalidade ou ineficácia da solução.
+A síntese articula duas perspetivas: capacidades e limitações funcionais, além de informação tecnológica disponível. Os pontos fortes e as limitações referem-se às funcionalidades e aos estudos anteriormente apresentados. Quando a documentação não permite confirmar uma característica ou demonstrar um benefício, essa insuficiência de informação não deve ser interpretada como ausência da funcionalidade ou ineficácia da solução.
 
 \renewcommand{\arraystretch}{1.3} % Aumenta ligeiramente o espaço entre as linhas para melhor leitura
 
@@ -228,6 +242,182 @@ Os pontos fortes e as limitações referem-se às funcionalidades e aos estudos 
 	
 \end{xltabular}
 
+
+
+A Tabela~\ref{tab:technologySolutions} complementa a comparação funcional com os dados de entrada e o comportamento descrito para cada solução. As categorias não identificam necessariamente a implementação interna: um fluxo adaptado pode resultar de regras explícitas ou de outros mecanismos, cuja utilização só deve ser afirmada quando documentada.
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{xltabular}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\caption{Caracterização tecnológica das soluções nas fontes consultadas}\label{tab:technologySolutions} \\
+\toprule
+\textbf{Solução} & \textbf{Entradas ou fontes descritas} & \textbf{Fluxo ou adaptação observável} & \textbf{Limite da informação disponível} \\ \midrule
+\endfirsthead
+\caption[]{Caracterização tecnológica das soluções (continuação)} \\
+\toprule
+\textbf{Solução} & \textbf{Entradas ou fontes descritas} & \textbf{Fluxo ou adaptação observável} & \textbf{Limite da informação disponível} \\ \midrule
+\endhead
+\midrule\multicolumn{4}{r}{\textit{Continua na próxima página}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Sleepio & Diário e respostas recolhidas no programa estudado. & Sessões e apoio automatizados, com interface de terapeuta virtual. & A interface animada não demonstra utilização de IA conversacional; o ensaio não isola os mecanismos internos. \\ \midrule
+SHUTi & Diário de sono e informação introduzida pelo utilizador. & Recomendações adaptadas, objetivos e progressão modular. & O ensaio não identifica separadamente o efeito da adaptação temporal. \\ \midrule
+Headspace Sleep Program & Participação nas sessões; diário e actigrafia utilizados na avaliação. & Percurso sequencial de 18 sessões. & A recolha para avaliação não demonstra utilização desses dados no mecanismo de decisão. \\ \midrule
+CBT-i Coach & Diário e outros registos introduzidos pelo utilizador. & Feedback e lembretes de apoio a um tratamento acompanhado. & A documentação citada não demonstra uma política autónoma de seleção de oportunidades terapêuticas. \\ \midrule
+Insomnia Coach & Diário e registos de acompanhamento do programa. & Plano de treino e feedback individual. & O detalhe computacional da personalização não é estabelecido pela descrição funcional. \\ \midrule
+Sleep Cycle & Estimativas produzidas pela monitorização e janela de despertar configurada. & Seleção do alarme dentro da janela definida. & Esta decisão temporal tem finalidade distinta do apoio terapêutico à TCC-I. \\ \midrule
+ShutEye & Dados processados pela monitorização da aplicação. & Relatórios, pontuação e sugestões; IA anunciada pelo fabricante. & A descrição consultada não permite reconstituir o treino e a validação do modelo. \\ \midrule
+Pillow & Dados do Apple Watch e áudio do iPhone em configurações descritas. & Análise e apresentação de informação proveniente de diferentes fontes. & Compatibilidade e acesso aos dados não equivalem à validação dos indicadores derivados. \\ \midrule
+SleepWatch & Dados de monitorização, incluindo utilização com Apple Watch. & Informações e orientações personalizadas. & O mecanismo interno de seleção das recomendações não está suficientemente descrito nas fontes usadas. \\ \midrule
+BetterSleep & Seleção de conteúdos e registos da monitorização sonora. & Conteúdos de apoio e apresentação de resultados da monitorização. & Escolha de conteúdos e personalização terapêutica são capacidades distintas. \\ \midrule
+Calm & Interação com os conteúdos disponibilizados. & Reprodução de histórias, música e meditações. & Nas fontes utilizadas, a descrição destes conteúdos não estabelece um mecanismo de inferência terapêutica. \\
+\end{xltabular}
+\endgroup
+
+A informação desta matriz resulta dos estudos e documentos citados nas descrições anteriores; não corresponde a uma auditoria do código nem a testes instrumentados das aplicações. Não se inferem interfaces públicas, processamento local ou remoto, modelos de IA ou tratamento de falhas a partir de funcionalidades visíveis. Quando estes elementos não são documentados, a comparação identifica essa lacuna.
+
 A comparação evidencia que nenhuma funcionalidade deve ser avaliada isoladamente da finalidade da solução. O acompanhamento profissional, por exemplo, pode constituir uma vantagem numa intervenção supervisionada e uma condicionante quando o objetivo é disponibilizar utilização autónoma.
 
-Para a presente dissertação, os contributos mais relevantes incluem a organização de um percurso terapêutico, a utilização do diário para adaptar o apoio, a integração de dados de dispositivos e a apresentação de \textit{feedback}. A avaliação do protótipo deverá permitir perceber se a combinação proposta acrescenta benefício, em particular na seleção das oportunidades de intervenção.
+Para a presente dissertação, os contributos mais relevantes incluem a organização de um percurso terapêutico, a utilização do diário para adaptar o apoio, a integração de dados de dispositivos e a apresentação de \textit{feedback}. A comparação tecnológica deverá fundamentar os requisitos e as alternativas de conceção, nomeadamente quanto à origem dos dados, à execução das decisões e à possibilidade de explicar os resultados. A avaliação do protótipo deverá distinguir a fiabilidade dessas capacidades do benefício observado pelos utilizadores.
+
+
+\section{Integração de wearables nas intervenções}
+\label{sec:chap3_integrateWearables}
+
+A integração de dispositivos \textit{wearable} permite complementar os registos autorreportados com estimativas recolhidas ao longo de várias noites. Numa aplicação adaptativa, o seu contributo depende tanto da validade dessas estimativas como da possibilidade de obter, interpretar e utilizar os dados no momento necessário.
+
+Na perspetiva de Engenharia Informática, a integração envolve um percurso entre a recolha pelo dispositivo, o processamento, a sincronização, o acesso pela aplicação e a preparação dos indicadores para decisão. Esta secção analisa os estudos de validação, as formas de acesso e os problemas de qualidade e disponibilidade temporal, relacionando-os com intervenções que utilizam estes dados.
+
+\subsection{Dados disponibilizados e validade das estimativas}
+\label{sec:chap3_wearableValidity}
+
+Um sinal recolhido por um sensor, uma categoria de sono estimada e um indicador agregado representam níveis de informação distintos. Para caracterizar uma integração, importa identificar quais desses níveis estão acessíveis à aplicação. O acesso a uma duração ou pontuação não implica acesso aos sinais que a originaram nem permite reproduzir o algoritmo do fabricante.
+
+Kang et al. (2017) compararam o \textit{wearable Fitbit Flex} com polissonografia em pessoas com insónia e bons dormidores. O dispositivo sobrestimou o tempo total de sono em cerca de 33 minutos no grupo com insónia, comparativamente a aproximadamente sete minutos nos bons dormidores. A frequência de concordância considerada aceitável foi também inferior no primeiro grupo. Estes resultados reforçam a necessidade de considerar a população na seleção de um dispositivo e na interpretação dos indicadores.
+
+Chinoy et al. (2021) avaliaram sete dispositivos de consumo em 34 adultos jovens saudáveis, durante três noites em laboratório. Os equipamentos apresentaram elevada sensibilidade para identificar sono e menor especificidade para identificar vigília. A classificação dos estádios mostrou resultados inconsistentes e o desempenho variou entre dispositivos e condições de sono.
+
+Schyvens et al. (2025) compararam seis dispositivos com polissonografia em 62 adultos. Todos identificaram mais de 90\% dos períodos de sono, enquanto a especificidade variou aproximadamente entre 29\% e 52\%. O coeficiente \textit{kappa} de Cohen na classificação dos estados e estádios variou entre 0,21 e 0,53. A avaliação decorreu durante uma noite em laboratório, limitando a interpretação do desempenho em utilização prolongada no quotidiano.
+
+Para o sistema proposto, estas diferenças condicionam o problema computacional que pode ser formulado. A identificação de despertares exige apreciar o desempenho na vigília; a análise de tendências de duração exige considerar erros e cobertura dos registos. Uma medida global de acerto ou a presença de uma pontuação de sono não permite concluir que todos os indicadores são adequados à decisão pretendida. A validação deverá ser relacionada com o modelo, a versão, a população e o contexto efetivamente utilizados.
+
+\subsection{Formas de acesso e interoperabilidade}
+\label{sec:chap3_wearableInteroperability}
+
+A escolha da forma de acesso determina os dados que a aplicação pode receber e as dependências necessárias. Na comparação tecnológica, distinguem-se três alternativas a verificar: acesso através de uma plataforma de saúde do sistema operativo; acesso por uma interface ou serviço do fabricante; e recolha através de uma aplicação no próprio dispositivo, quando existam sensores e interfaces disponíveis. Estas alternativas podem coexistir, mas não devem ser consideradas equivalentes sem análise da documentação correspondente.
+
+No ecossistema \textit{Apple}, o \textit{HealthKit} representa intervalos de tempo na cama e categorias como vigília, sono ligeiro ou intermédio, profundo e REM. Os intervalos de tempo na cama podem sobrepor-se aos registos detalhados; por isso, a sua soma indiscriminada produziria contagens incorretas. A documentação assinala também que o \textit{Apple Watch} inclui registos de vigília entre dois registos de sono, podendo não existir detalhe correspondente ao início ou ao fim do intervalo na cama (Apple, s.d.).
+
+No Android, o \textit{Health Connect} disponibiliza um modelo de sessões com instantes de início, fim e, quando presentes, estádios. Outros registos, como a frequência cardíaca, são consultados como tipos de dados próprios e podem ser relacionados com a sessão através dos intervalos temporais (Google, s.d.). Assim, representar uma sessão e associar-lhe medições são operações distintas.
+
+O acesso é igualmente condicionado por permissões. A documentação do \textit{HealthKit} descreve autorização por tipo de dados e esclarece que a aplicação não consegue distinguir diretamente autorização de leitura negada de determinadas situações de ausência de dados (Apple, s.d.). Uma consulta vazia não demonstra, portanto, que a pessoa não dormiu ou que o dispositivo não produziu registos.
+
+Para comparar as alternativas sem antecipar a arquitetura, propõem-se os critérios da Tabela~\ref{tab:integrationCriteria}.
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{xltabular}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.1cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\caption{Critérios tecnológicos para comparar alternativas de integração}\label{tab:integrationCriteria}\\
+\toprule
+\textbf{Critério} & \textbf{Informação a verificar} & \textbf{Consequência para o sistema}\\ \midrule
+\endfirsthead
+\caption[]{Critérios tecnológicos para comparar alternativas de integração (continuação)}\\
+\toprule
+\textbf{Critério} & \textbf{Informação a verificar} & \textbf{Consequência para o sistema}\\ \midrule
+\endhead
+\midrule\multicolumn{3}{r}{\textit{Continua na próxima página}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Cobertura dos dados & Indicadores, registos por intervalo, resumos e acesso a sinais. & Delimita as variáveis disponíveis para caracterizar o utilizador.\\ \midrule
+Compatibilidade & Dispositivos, versões e aplicações produtoras suportadas. & Condiciona a população e os equipamentos abrangidos pelo protótipo.\\ \midrule
+Autorização & Tipos de dados acessíveis e comportamento perante permissões indisponíveis. & Exige fluxos de autorização e utilização parcial da aplicação.\\ \midrule
+Disponibilidade & Momento de escrita, sincronização e leitura dos registos. & Determina que decisões podem ocorrer durante ou após o episódio de sono.\\ \midrule
+Proveniência & Origem, identificadores e informação de atualização disponível. & Apoia a rastreabilidade e o tratamento de versões e duplicações.\\ \midrule
+Dependências de execução & Necessidade de ligação, aplicação intermediária ou execução em segundo plano. & Condiciona a continuidade da recolha e a recuperação após interrupções.\\
+\end{xltabular}
+\endgroup
+
+Estes critérios constituem uma grelha de análise para a dissertação. As capacidades de cada alternativa deverão ser confirmadas nas interfaces e versões selecionadas, sem pressupor que a utilização de uma plataforma comum uniformiza a qualidade dos dispositivos que a alimentam.
+
+\subsection{Disponibilidade temporal, sincronização e qualidade dos dados}
+\label{sec:chap3_wearableDataQuality}
+
+A disponibilidade deve distinguir o momento a que o registo se refere do momento em que pode ser consultado. Um intervalo de sono pode ter marcas temporais detalhadas e ser disponibilizado apenas depois de processado e sincronizado. A documentação do \textit{Health Connect} indica que o registo da sessão de sono deve ser escrito após a sua conclusão, embora dados granulares possam ser registados durante a sessão (Google, s.d.). A existência de estádios num resumo não garante, assim, que estes estivessem acessíveis durante a noite.
+
+Para esta investigação, será pertinente registar, quando tecnicamente possível, o instante do acontecimento, o instante de disponibilização na fonte e o instante de importação. Essa distinção permitirá estimar atrasos observáveis e verificar se o mecanismo adaptativo utilizou apenas informação acessível no ponto de decisão. Evita-se, deste modo, avaliar retrospetivamente um algoritmo com dados que não existiriam durante a execução real.
+
+A sincronização exige também considerar atualizações e eliminações. A documentação do \textit{Health Connect} descreve mecanismos para acompanhar alterações e preservar a correspondência entre registos. Identificadores e versões permitem tratar atualizações, em vez de criar uma nova observação a cada importação (Google, s.d.). Para o protótipo, a repetição de uma operação após uma falha deverá produzir um resultado consistente, sem duplicar os períodos de sono.
+
+A qualidade da integração deverá ser apreciada através das dimensões seguintes:
+
+\begin{itemize}
+    \item \textbf{Completude:} noites e intervalos com registos utilizáveis, distinguindo ausência de dados de valores nulos efetivamente observados.
+    \item \textbf{Granularidade:} diferença entre um resumo noturno e registos por intervalo, sem assumir que a frequência de escrita corresponde à frequência original do sensor.
+    \item \textbf{Consistência temporal:} validação de início, fim, fuso horário e sobreposição dos intervalos.
+    \item \textbf{Proveniência:} identificação da fonte e do método de obtenção disponível, preservando a distinção entre dados do diário e estimativas do dispositivo.
+    \item \textbf{Coerência semântica:} manutenção das definições originais das categorias, sem converter automaticamente tempo na cama em tempo de sono ou estados desconhecidos em vigília.
+    \item \textbf{Atualidade:} adequação da idade dos dados à decisão pretendida e identificação de registos recebidos após essa oportunidade.
+\end{itemize}
+
+Estas dimensões são propostas como critérios de análise e futura verificação do sistema. As divergências entre o diário e o dispositivo deverão manter-se identificáveis, sem substituir silenciosamente uma fonte pela outra. Na ausência de informação suficiente, o mecanismo deverá seguir um comportamento definido, como adiar a decisão ou utilizar uma opção que não dependa do indicador em falta.
+
+\subsection{Utilização dos dados nas intervenções}
+\label{sec:chap3_wearableInterventions}
+
+Aji et al. (2022) realizaram um ensaio piloto com 128 participantes, comparando uma intervenção comportamental digital para a insónia com e sem integração de um dispositivo. O grupo com \textit{wearable} apresentou maior preenchimento de diários, com uma média de 22,4 registos, face a 14,1 no grupo sem dispositivo. Foram observadas melhorias superiores em alguns parâmetros de sono, mas a diferença entre grupos na alteração do ISI não atingiu significância estatística.
+
+Para a análise tecnológica, este desenho permite discutir a sincronização do wearable como componente adicional de uma intervenção. Os resultados de envolvimento e os resultados clínicos devem ser separados; os valores reportados não constituem, por si só, medidas de latência, completude ou fiabilidade da integração.
+
+Takeuchi et al. (2024) utilizaram dados de um \textit{wearable} para produzir feedback personalizado, avaliado num ensaio microaleatorizado com trabalhadores. A fase de intervenção incluiu 81 participantes, dos quais 67 foram analisados. Foram identificados efeitos proximais cuja intensidade diminuiu ao longo de duas semanas. A aplicabilidade a populações clínicas com insónia permanece por esclarecer.
+
+Este trabalho é relevante por explicitar uma cadeia entre observação e intervenção: caracterização dos padrões individuais, produção de feedback e avaliação de resultados após a sua entrega. Contudo, essa avaliação não estabelece a capacidade de reconhecer um despertar noturno em tempo real. A definição do ponto de decisão e do resultado proximal será aprofundada na análise das intervenções adaptativas.
+
+\subsection{Síntese e implicações tecnológicas}
+\label{sec:chap3_wearableSynthesis}
+
+A Tabela~\ref{tab:useOfWearable} relaciona a evidência dos estudos com o problema de Engenharia Informática a considerar.
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{xltabular}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.4cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\caption{Evidência e implicações tecnológicas da integração de wearables}\label{tab:useOfWearable}\\
+\toprule
+\textbf{Trabalho} & \textbf{Evidência e limite} & \textbf{Implicação tecnológica}\\ \midrule
+\endfirsthead
+\caption[]{Evidência e implicações tecnológicas da integração de wearables (continuação)}\\
+\toprule
+\textbf{Trabalho} & \textbf{Evidência e limite} & \textbf{Implicação tecnológica}\\ \midrule
+\endhead
+\midrule\multicolumn{3}{r}{\textit{Continua na próxima página}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Kang et al. (2017) & Desempenho diferente entre pessoas com insónia e bons dormidores, num dispositivo específico. & Relacionar o erro das estimativas com a população e os indicadores usados na decisão.\\ \midrule
+Chinoy et al. (2021) & Maior capacidade de identificar sono do que vigília em adultos jovens saudáveis. & Avaliar a tarefa específica; o acerto global não caracteriza adequadamente a deteção de despertares.\\ \midrule
+Schyvens et al. (2025) & Diferenças entre seis equipamentos numa avaliação de uma noite. & Registar dispositivo e versão e evitar transferir resultados entre equipamentos sem validação.\\ \midrule
+Aji et al. (2022) & Maior envolvimento com wearable, sem superioridade estatística na alteração do ISI. & Separar indicadores de utilização, qualidade da integração e resultados clínicos.\\ \midrule
+Takeuchi et al. (2024) & Feedback produzido a partir dos dados com efeitos proximais variáveis no tempo. & Explicitar o percurso entre recolha, decisão e ação e avaliar os efeitos de oportunidades sucessivas.\\
+\end{xltabular}
+\endgroup
+
+A seleção do wearable e da forma de acesso deverá decorrer da comparação entre cobertura dos indicadores, validade pertinente, granularidade, disponibilidade e condições de execução. A identificação dessas condições precede a escolha do algoritmo, uma vez que determina que variáveis poderão estar disponíveis durante o seu funcionamento.
+
+Na avaliação do protótipo, propõe-se distinguir a completude dos registos, os atrasos observáveis, as duplicações, a recuperação de falhas e a rastreabilidade das decisões dos indicadores de adesão e de evolução dos sintomas. Esta separação permitirá verificar o funcionamento tecnológico mesmo quando a dimensão do estudo com utilizadores apenas permita uma apreciação exploratória dos resultados clínicos.
+
+O contributo da integração consiste, assim, em disponibilizar informação utilizável e rastreável para o mecanismo de decisão, com limitações conhecidas. A secção seguinte aprofundará as abordagens computacionais que podem transformar essa informação em recomendações personalizadas.
+
+% Fontes técnicas complementares consultadas em 12-11-2026, a integrar na bibliografia:
+% Apple. Authorizing access to health data.
+% https://developer.apple.com/documentation/healthkit/authorizing-access-to-health-data
+% Google. Synchronize data.
+% https://developer.android.com/health-and-fitness/health-connect/sync-data
+% Google. Write data.
+% https://developer.android.com/health-and-fitness/health-connect/write-data
+% Manter também as referências existentes de HKCategoryValueSleepAnalysis e
+% Develop Sleep Experiences with Health Connect. Ajustar s.d.-a, s.d.-b, etc.
+% às entradas efetivas e à ordenação adotada na bibliografia do documento principal.
