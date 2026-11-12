@@ -37,8 +37,19 @@
 \contentsline {subsection}{\numberline {2.4.5}Adequação clínica e acompanhamento}{14}{subsection.53}%
 \contentsline {subsection}{\numberline {2.4.6}Implicações para a aplicação proposta}{14}{subsection.54}%
 \contentsline {section}{\numberline {2.5}Intervenções digitais e personalização}{14}{section.55}%
-\contentsline {subsection}{\numberline {2.5.1}Just-in-Time Adaptive Interventions (JITAI)}{14}{subsection.56}%
-\contentsline {subsection}{\numberline {2.5.2}Adesão e mitigação da ansiedade associada ao sono}{15}{subsection.57}%
-\contentsline {subsection}{\numberline {2.5.3}Segurança clínica e regulamentação (DTx)}{15}{subsection.58}%
-\contentsline {subsection}{\numberline {2.5.4}Implicações para a presente dissertação}{16}{subsection.59}%
-\contentsline {chapter}{Appendix \numberline {A}Appendix Title Here}{17}{appendix.60}%
+\contentsline {subsection}{\numberline {2.5.1}TCC-I digital: modalidades e evidência}{15}{subsection.56}%
+\contentsline {subsection}{\numberline {2.5.2}Dimensões da personalização}{15}{subsection.57}%
+\contentsline {subsection}{\numberline {2.5.3}Just-in-Time Adaptive Interventions (JITAI)}{15}{subsection.58}%
+\contentsline {subsection}{\numberline {2.5.4}Dados disponíveis e limites da adaptação}{17}{subsection.60}%
+\contentsline {subsection}{\numberline {2.5.5}Adesão e mitigação da ansiedade associada ao sono}{17}{subsection.61}%
+\contentsline {subsection}{\numberline {2.5.6}Segurança clínica, privacidade e enquadramento regulamentar}{18}{subsection.62}%
+\contentsline {subsection}{\numberline {2.5.7}Implicações para a presente dissertação}{18}{subsection.63}%
+\contentsline {chapter}{\numberline {3}Estado da arte}{21}{chapter.64}%
+\contentsline {section}{\numberline {3.1}Estratégia de pesquisa e seleção dos trabalhos}{21}{section.65}%
+\contentsline {section}{\numberline {3.2}Soluções digitais para o sono e a insónia}{23}{section.67}%
+\contentsline {subsection}{\numberline {3.2.1}Programas estruturados para a insónia}{24}{subsection.68}%
+\contentsline {subsection}{\numberline {3.2.2}Aplicações de apoio ao tratamento e auto cuidado}{25}{subsection.72}%
+\contentsline {subsection}{\numberline {3.2.3}Aplicações de monitorização e feedback}{25}{subsection.75}%
+\contentsline {subsection}{\numberline {3.2.4}Aplicações de relaxamento e apoio ao sono}{26}{subsection.80}%
+\contentsline {subsection}{\numberline {3.2.5}Síntese comparativa}{26}{subsection.83}%
+\contentsline {chapter}{Appendix \numberline {A}Appendix Title Here}{31}{appendix.84}%

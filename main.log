@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  9 NOV 2026 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.13)  12 NOV 2026 00:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1250,73 +1250,98 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
+(C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/xltabular\xltabular.sty
+Package: xltabular 2025/02/28 v0.2i `xltabular' package (hv,RN)
+(C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen349
+\TX@old@table=\dimen350
+\TX@old@col=\dimen351
+\TX@target=\dimen352
+\TX@delta=\dimen353
+\TX@cols=\count424
+\TX@ftn=\toks62
+)
+(C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/ltablex\ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+))
+(C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+(C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/lscapeenhanced\lscapeen
+hanced.sty
+Package: lscapeenhanced 2024-04-16 v1.0 improved lscape package
+Package lscapeenhanced Info: \landscape patched to make \textheight change opti
+onal on input line 72.
+\@lscapeenhanced@textheight=\skip75
+)
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
 
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count424
+\lrq@indent=\count425
 
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count425
-\c@listtotal=\count426
-\c@listcount=\count427
-\c@liststart=\count428
-\c@liststop=\count429
-\c@citecount=\count430
-\c@citetotal=\count431
-\c@multicitecount=\count432
-\c@multicitetotal=\count433
-\c@instcount=\count434
-\c@maxnames=\count435
-\c@minnames=\count436
-\c@maxitems=\count437
-\c@minitems=\count438
-\c@citecounter=\count439
-\c@maxcitecounter=\count440
-\c@savedcitecounter=\count441
-\c@uniquelist=\count442
-\c@uniquename=\count443
-\c@refsection=\count444
-\c@refsegment=\count445
-\c@maxextratitle=\count446
-\c@maxextratitleyear=\count447
-\c@maxextraname=\count448
-\c@maxextradate=\count449
-\c@maxextraalpha=\count450
-\c@abbrvpenalty=\count451
-\c@highnamepenalty=\count452
-\c@lownamepenalty=\count453
-\c@maxparens=\count454
-\c@parenlevel=\count455
-\blx@tempcnta=\count456
-\blx@tempcntb=\count457
-\blx@tempcntc=\count458
-\c@blx@maxsection=\count459
-\blx@maxsegment@0=\count460
-\blx@notetype=\count461
-\blx@parenlevel@text=\count462
-\blx@parenlevel@foot=\count463
-\blx@sectionciteorder@0=\count464
-\blx@sectionciteorderinternal@0=\count465
-\blx@entrysetcounter=\count466
-\blx@biblioinstance=\count467
-\labelnumberwidth=\skip75
-\labelalphawidth=\skip76
-\biblabelsep=\skip77
-\bibitemsep=\skip78
-\bibnamesep=\skip79
-\bibinitsep=\skip80
-\bibparsep=\skip81
-\bibhang=\skip82
+\c@tabx@nest=\count426
+\c@listtotal=\count427
+\c@listcount=\count428
+\c@liststart=\count429
+\c@liststop=\count430
+\c@citecount=\count431
+\c@citetotal=\count432
+\c@multicitecount=\count433
+\c@multicitetotal=\count434
+\c@instcount=\count435
+\c@maxnames=\count436
+\c@minnames=\count437
+\c@maxitems=\count438
+\c@minitems=\count439
+\c@citecounter=\count440
+\c@maxcitecounter=\count441
+\c@savedcitecounter=\count442
+\c@uniquelist=\count443
+\c@uniquename=\count444
+\c@refsection=\count445
+\c@refsegment=\count446
+\c@maxextratitle=\count447
+\c@maxextratitleyear=\count448
+\c@maxextraname=\count449
+\c@maxextradate=\count450
+\c@maxextraalpha=\count451
+\c@abbrvpenalty=\count452
+\c@highnamepenalty=\count453
+\c@lownamepenalty=\count454
+\c@maxparens=\count455
+\c@parenlevel=\count456
+\blx@tempcnta=\count457
+\blx@tempcntb=\count458
+\blx@tempcntc=\count459
+\c@blx@maxsection=\count460
+\blx@maxsegment@0=\count461
+\blx@notetype=\count462
+\blx@parenlevel@text=\count463
+\blx@parenlevel@foot=\count464
+\blx@sectionciteorder@0=\count465
+\blx@sectionciteorderinternal@0=\count466
+\blx@entrysetcounter=\count467
+\blx@biblioinstance=\count468
+\labelnumberwidth=\skip76
+\labelalphawidth=\skip77
+\biblabelsep=\skip78
+\bibitemsep=\skip79
+\bibnamesep=\skip80
+\bibinitsep=\skip81
+\bibparsep=\skip82
+\bibhang=\skip83
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language80
-\c@mincomprange=\count468
-\c@maxcomprange=\count469
-\c@mincompwidth=\count470
+\c@mincomprange=\count469
+\c@maxcomprange=\count470
+\c@mincompwidth=\count471
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1327,88 +1352,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count471
-\c@savedafterword=\count472
-\c@annotator=\count473
-\c@savedannotator=\count474
-\c@author=\count475
-\c@savedauthor=\count476
-\c@bookauthor=\count477
-\c@savedbookauthor=\count478
-\c@commentator=\count479
-\c@savedcommentator=\count480
-\c@editor=\count481
-\c@savededitor=\count482
-\c@editora=\count483
-\c@savededitora=\count484
-\c@editorb=\count485
-\c@savededitorb=\count486
-\c@editorc=\count487
-\c@savededitorc=\count488
-\c@foreword=\count489
-\c@savedforeword=\count490
-\c@holder=\count491
-\c@savedholder=\count492
-\c@introduction=\count493
-\c@savedintroduction=\count494
-\c@namea=\count495
-\c@savednamea=\count496
-\c@nameb=\count497
-\c@savednameb=\count498
-\c@namec=\count499
-\c@savednamec=\count500
-\c@translator=\count501
-\c@savedtranslator=\count502
-\c@shortauthor=\count503
-\c@savedshortauthor=\count504
-\c@shorteditor=\count505
-\c@savedshorteditor=\count506
-\c@labelname=\count507
-\c@savedlabelname=\count508
-\c@institution=\count509
-\c@savedinstitution=\count510
-\c@lista=\count511
-\c@savedlista=\count512
-\c@listb=\count513
-\c@savedlistb=\count514
-\c@listc=\count515
-\c@savedlistc=\count516
-\c@listd=\count517
-\c@savedlistd=\count518
-\c@liste=\count519
-\c@savedliste=\count520
-\c@listf=\count521
-\c@savedlistf=\count522
-\c@location=\count523
-\c@savedlocation=\count524
-\c@organization=\count525
-\c@savedorganization=\count526
-\c@origlocation=\count527
-\c@savedoriglocation=\count528
-\c@origpublisher=\count529
-\c@savedorigpublisher=\count530
-\c@publisher=\count531
-\c@savedpublisher=\count532
-\c@language=\count533
-\c@savedlanguage=\count534
-\c@origlanguage=\count535
-\c@savedoriglanguage=\count536
-\c@pageref=\count537
-\c@savedpageref=\count538
-\shorthandwidth=\skip83
-\shortjournalwidth=\skip84
-\shortserieswidth=\skip85
-\shorttitlewidth=\skip86
-\shortauthorwidth=\skip87
-\shorteditorwidth=\skip88
-\locallabelnumberwidth=\skip89
-\locallabelalphawidth=\skip90
-\localshorthandwidth=\skip91
-\localshortjournalwidth=\skip92
-\localshortserieswidth=\skip93
-\localshorttitlewidth=\skip94
-\localshortauthorwidth=\skip95
-\localshorteditorwidth=\skip96
+\c@afterword=\count472
+\c@savedafterword=\count473
+\c@annotator=\count474
+\c@savedannotator=\count475
+\c@author=\count476
+\c@savedauthor=\count477
+\c@bookauthor=\count478
+\c@savedbookauthor=\count479
+\c@commentator=\count480
+\c@savedcommentator=\count481
+\c@editor=\count482
+\c@savededitor=\count483
+\c@editora=\count484
+\c@savededitora=\count485
+\c@editorb=\count486
+\c@savededitorb=\count487
+\c@editorc=\count488
+\c@savededitorc=\count489
+\c@foreword=\count490
+\c@savedforeword=\count491
+\c@holder=\count492
+\c@savedholder=\count493
+\c@introduction=\count494
+\c@savedintroduction=\count495
+\c@namea=\count496
+\c@savednamea=\count497
+\c@nameb=\count498
+\c@savednameb=\count499
+\c@namec=\count500
+\c@savednamec=\count501
+\c@translator=\count502
+\c@savedtranslator=\count503
+\c@shortauthor=\count504
+\c@savedshortauthor=\count505
+\c@shorteditor=\count506
+\c@savedshorteditor=\count507
+\c@labelname=\count508
+\c@savedlabelname=\count509
+\c@institution=\count510
+\c@savedinstitution=\count511
+\c@lista=\count512
+\c@savedlista=\count513
+\c@listb=\count514
+\c@savedlistb=\count515
+\c@listc=\count516
+\c@savedlistc=\count517
+\c@listd=\count518
+\c@savedlistd=\count519
+\c@liste=\count520
+\c@savedliste=\count521
+\c@listf=\count522
+\c@savedlistf=\count523
+\c@location=\count524
+\c@savedlocation=\count525
+\c@organization=\count526
+\c@savedorganization=\count527
+\c@origlocation=\count528
+\c@savedoriglocation=\count529
+\c@origpublisher=\count530
+\c@savedorigpublisher=\count531
+\c@publisher=\count532
+\c@savedpublisher=\count533
+\c@language=\count534
+\c@savedlanguage=\count535
+\c@origlanguage=\count536
+\c@savedoriglanguage=\count537
+\c@pageref=\count538
+\c@savedpageref=\count539
+\shorthandwidth=\skip84
+\shortjournalwidth=\skip85
+\shortserieswidth=\skip86
+\shorttitlewidth=\skip87
+\shortauthorwidth=\skip88
+\shorteditorwidth=\skip89
+\locallabelnumberwidth=\skip90
+\locallabelalphawidth=\skip91
+\localshorthandwidth=\skip92
+\localshortjournalwidth=\skip93
+\localshortserieswidth=\skip94
+\localshorttitlewidth=\skip95
+\localshortauthorwidth=\skip96
+\localshorteditorwidth=\skip97
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1419,19 +1444,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
-\c@textcitecount=\count539
-\c@textcitetotal=\count540
-\c@textcitemaxnames=\count541
-\c@biburlbigbreakpenalty=\count542
-\c@biburlbreakpenalty=\count543
-\c@biburlnumpenalty=\count544
-\c@biburlucpenalty=\count545
-\c@biburllcpenalty=\count546
+\c@textcitecount=\count540
+\c@textcitetotal=\count541
+\c@textcitemaxnames=\count542
+\c@biburlbigbreakpenalty=\count543
+\c@biburlbreakpenalty=\count544
+\c@biburlnumpenalty=\count545
+\c@biburlucpenalty=\count546
+\c@biburllcpenalty=\count547
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count547
+\c@smartand=\count548
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.bbx' found.
@@ -1451,8 +1476,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
 bx
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count548
-\c@bbx:relatedtotal=\count549
+\c@bbx:relatedcount=\count549
+\c@bbx:relatedtotal=\count550
 )))
 Package biblatex Info: Trying to load citation style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.cbx' found.
@@ -1490,48 +1515,48 @@ Package biblatex Info: ... and expl3
 .sty
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 62.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 62.
-Package hyperref Info: Option `colorlinks' set `false' on input line 62.
-Package hyperref Info: Option `unicode' set `true' on input line 62.
-Package hyperref Info: Option `breaklinks' set `true' on input line 62.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 68.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 68.
+Package hyperref Info: Option `colorlinks' set `false' on input line 68.
+Package hyperref Info: Option `unicode' set `true' on input line 68.
+Package hyperref Info: Option `breaklinks' set `true' on input line 68.
 \glswrite=\write5
 \glo@main@file=\write6
 \openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 72.
+Package glossaries Info: Writing glossary file main.glo on input line 78.
 \glo@acronym@file=\write7
 \openout7 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 72.
+Package glossaries Info: Writing glossary file main.acn on input line 78.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-5.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 12
+1.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
 
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
 slations-basic-dictionary-english.trsl
@@ -1539,22 +1564,22 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 115.
+or `english'. on input line 121.
 
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count550
-\scratchdimen=\dimen349
+\scratchcounter=\count551
+\scratchdimen=\dimen354
 \scratchbox=\box89
-\nofMPsegments=\count551
-\nofMParguments=\count552
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count553
-\MPscratchDim=\dimen350
-\MPnumerator=\count554
-\makeMPintoPDFobject=\count555
-\everyMPtoPDFconversion=\toks63
+\nofMPsegments=\count552
+\nofMParguments=\count553
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count554
+\MPscratchDim=\dimen355
+\MPnumerator=\count555
+\makeMPintoPDFobject=\count556
+\everyMPtoPDFconversion=\toks64
 )
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1566,8 +1591,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count556
-Package tocbasic Info: setting babel extension for `lol' on input line 115.
+\c@lstlisting=\count557
+Package tocbasic Info: setting babel extension for `lol' on input line 121.
  (main.glsdefs)
 (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-english\glos
 saries-dictionary-English.dict
@@ -1612,29 +1637,29 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrbase Info: activating english \dissertationdisclamer on input line 1
-15.
-Package scrbase Info: activating english \advisorlabel on input line 115.
-Package scrbase Info: activating english \coadvisorlabel on input line 115.
-Package scrbase Info: activating english \supervisorlabel on input line 115.
-Package scrbase Info: activating english \cosupervisorlabel on input line 115.
-Package scrbase Info: activating english \evallabel on input line 115.
-Package scrbase Info: activating english \presidentlabel on input line 115.
-Package scrbase Info: activating english \memberslabel on input line 115.
-Package scrbase Info: activating english \statementlabel on input line 115.
-Package scrbase Info: activating english \statementtext on input line 115.
-Package scrbase Info: activating english \dedicationlabel on input line 115.
-Package scrbase Info: activating english \abslabel on input line 115.
-Package scrbase Info: activating english \keywordslabel on input line 115.
-Package scrbase Info: activating english \abslabelotherlang on input line 115.
-Package scrbase Info: activating english \abbrevname on input line 115.
-Package scrbase Info: activating english \constantsname on input line 115.
-Package scrbase Info: activating english \symbolsname on input line 115.
-Package scrbase Info: activating english \acknowledgementlabel on input line 11
-5.
+21.
+Package scrbase Info: activating english \advisorlabel on input line 121.
+Package scrbase Info: activating english \coadvisorlabel on input line 121.
+Package scrbase Info: activating english \supervisorlabel on input line 121.
+Package scrbase Info: activating english \cosupervisorlabel on input line 121.
+Package scrbase Info: activating english \evallabel on input line 121.
+Package scrbase Info: activating english \presidentlabel on input line 121.
+Package scrbase Info: activating english \memberslabel on input line 121.
+Package scrbase Info: activating english \statementlabel on input line 121.
+Package scrbase Info: activating english \statementtext on input line 121.
+Package scrbase Info: activating english \dedicationlabel on input line 121.
+Package scrbase Info: activating english \abslabel on input line 121.
+Package scrbase Info: activating english \keywordslabel on input line 121.
+Package scrbase Info: activating english \abslabelotherlang on input line 121.
+Package scrbase Info: activating english \abbrevname on input line 121.
+Package scrbase Info: activating english \constantsname on input line 121.
+Package scrbase Info: activating english \symbolsname on input line 121.
+Package scrbase Info: activating english \acknowledgementlabel on input line 12
+1.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package hyperref Info: Link coloring OFF on input line 115.
+Package hyperref Info: Link coloring OFF on input line 121.
 (main.out) (main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
@@ -1654,14 +1679,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 115.
-Package biblatex Info: Reference segment=0 on input line 115.
+Package biblatex Info: Reference section=0 on input line 121.
+Package biblatex Info: Reference segment=0 on input line 121.
  (frontmatter/frontmatter.tex (frontmatter/glossary.tex
 \@gls@deffile=\write9
 \openout9 = `main.glsdefs'.
 
 )
-<frontmatter/assets/isep_logo.pdf, id=178, 8130.375pt x 993.7125pt>
+<frontmatter/assets/isep_logo.pdf, id=222, 8130.375pt x 993.7125pt>
 File: frontmatter/assets/isep_logo.pdf Graphic file (type pdf)
 <use frontmatter/assets/isep_logo.pdf>
 Package pdftex.def Info: frontmatter/assets/isep_logo.pdf  used on input line 1
@@ -1881,52 +1906,114 @@ C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
 [14]
 
-[15]) (ch3/chapter3.tex)
+[15]
 
-LaTeX Warning: Empty bibliography on input line 142.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 320.
+
+
+
+[16]
+
+[17]
+
+[18]) (ch3/chapter3.tex
+
+[19]
+
+[20
+
+]
+Chapter 3.
+
+Overfull \hbox (2.05896pt too wide) in paragraph at lines 16--17
+[]\T1/lmr/m/n/10.95 O capí-tulo começa por ap-re-sen-tar a es-traté-gia de pesq
+uisa e se-leção dos tra-bal-hos. Seguida-
+ []
+
+
+
+[21]
+
+[22]
+
+[23]
+
+[24]
+Overfull \hbox (6.29657pt too wide) in paragraph at lines 124--125
+[]\T1/lmr/m/n/10.95 A doc-u-men-tação es-clarece que a apli-cação não sub-sti-t
+ui os cuida-dos profis-sion-ais necessários
+ []
+
+
+
+[25]
+Overfull \hbox (1.7096pt too wide) in paragraph at lines 229--229
+[]|\T1/lmr/bx/n/10.95 SleepWatch|  
+ []
+
+
+Overfull \hbox (1.91803pt too wide) in paragraph at lines 229--229
+[]|\T1/lmr/bx/n/10.95 BetterSleep|  
+ []
+
+
+
+[26] [27]
+
+[28])
+
+LaTeX Warning: Empty bibliography on input line 148.
 
 (appendices/appendixA.tex
 
-[16]
+[29]
+
+[30
+
+]
 Appendix A.
 )
 
-[17
-
-] (main.aux)
+[31] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 828E099AA5E55A3D3A69BB2D78E9C1C7;9774.
+(rerunfilecheck)             Checksum: E2E1CEB6B1A646B0F06350E7D0C7C5A1;12637.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59393 strings out of 468130
- 1431347 string characters out of 5430632
- 2395112 words of memory out of 5000000
- 87099 multiletter control sequences out of 15000+600000
- 696370 words of font info for 77 fonts, out of 8000000 for 9000
+ 59657 strings out of 468130
+ 1436870 string characters out of 5430632
+ 2416128 words of memory out of 5000000
+ 87304 multiletter control sequences out of 15000+600000
+ 702155 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,20n,131p,2475b,2920s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
-b><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb
-><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb
-><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb>
-<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C
-:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/
-Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Us
-ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Us
-ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Us
-ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Us
-ers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb>
-Output written on main.pdf (39 pages, 402698 bytes).
+
+pdfTeX warning (dest): name{table.26.2} has been referenced but does not exist,
+ replaced by a fixed one
+
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb>
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb>
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><
+C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb>
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb>
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><
+C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:
+/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/U
+sers/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Use
+rs/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Use
+rs/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Use
+rs/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Use
+rs/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb>
+Output written on main.pdf (53 pages, 476488 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 362 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 450 words of extra memory for PDF output out of 10000 (max. 10000000)
 

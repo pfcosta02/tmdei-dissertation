@@ -1,0 +1,233 @@
+% Chapter 3
+% 
+\chapter{Estado da arte} % Main chapter title
+\label{chap:Chapter3} % For referencing the chapter elsewhere
+
+%-------------------------------------------------------------------------------
+%---------
+%
+
+O desenvolvimento de intervenções digitais para a insónia tem permitido explorar diferentes formas de disponibilizar conteúdos terapêuticos, acompanhar padrões de sono e apoiar a aplicação de estratégias comportamentais. A investigação inclui programas estruturados de TCC-I digital, aplicações de apoio ao tratamento, integração de dispositivos \textit{wearable} e mecanismos de adaptação do acompanhamento. Os estudos diferem, contudo, quanto às populações abrangidas, aos dados utilizados, às decisões tomadas e aos resultados avaliados (Pulantara et al., 2018; Aji et al., 2022; Hentati et al., 2025).
+
+Partindo dos fundamentos apresentados no capítulo anterior, este capítulo analisa como esses conceitos são concretizados nas soluções existentes. A revisão procura compreender de que forma os sistemas utilizam informação individual para selecionar conteúdos, ajustar o acompanhamento e identificar oportunidades de intervenção. Considera também a evidência disponível sobre a fiabilidade da monitorização, a adesão e os resultados terapêuticos.
+
+A análise é orientada pelas questões de investigação da dissertação: o contributo das recomendações personalizadas e temporalmente adaptadas para a qualidade do sono e a adesão, e a possibilidade de identificar oportunidades de apoio com base em dados de \textit{smartwatch} e técnicas de inteligência artificial. Neste enquadramento, distingue-se a capacidade de estimar parâmetros do sono da capacidade de selecionar uma intervenção adequada e de demonstrar o benefício dessa decisão.
+
+O capítulo começa por apresentar a estratégia de pesquisa e seleção dos trabalhos. Seguidamente, analisa as soluções digitais de TCC-I, a integração de \textit{wearables}, os mecanismos de personalização e as intervenções adaptativas. A síntese comparativa permitirá identificar as limitações da evidência e delimitar o contributo da aplicação proposta.
+
+
+\section{Estratégia de pesquisa e seleção dos trabalhos} 
+\label{sec:chap3_estrategiaPesquisa} %For referencing this section elsewhere
+
+A revisão encontra-se organizada em duas etapas: um levantamento exploratório inicial e a consolidação da pesquisa em bases bibliográficas e fontes institucionais. Esta organização permite identificar trabalhos de referência, ajustar os termos de pesquisa e estabelecer critérios para uma seleção consistente.
+
+O levantamento inicial foi realizado através de pesquisas na \textit{Web}, com consulta de publicações científicas e páginas institucionais. Foram exploradas combinações de termos relacionados com insónia, TCC-I digital, aplicações móveis, \textit{wearables}, personalização, inteligência artificial e intervenções adaptativas. Esta etapa permitiu identificar estudos relevantes e organizar os principais eixos da revisão, constituindo uma base para aprofundamento.
+
+Para consolidar a pesquisa, prevê-se a utilização da \textit{PubMed}, pela sua cobertura da investigação clínica, e da \textit{IEEE Xplore} e \textit{ACM Digital Library}, para os trabalhos relacionados com sistemas móveis, sensores e mecanismos computacionais. A \textit{Scopus} ou a \textit{Web of Science} poderão complementar a pesquisa e o acompanhamento das citações, de acordo com o acesso institucional disponível.
+
+A pesquisa será também complementada pela consulta dos portais oficiais da \textit{American Academy of Sleep Medicine} (AASM) e da \textit{European Sleep Research Society} (ESRS), procurando identificar orientações clínicas, documentos de posição e recomendações relevantes para a avaliação da insónia, a TCC-I e a utilização de tecnologias de monitorização. No contexto português, serão consideradas a Associação Portuguesa do Sono (APS) e a Direção-Geral da Saúde (DGS), para identificar documentação aplicável ao enquadramento nacional e à promoção da saúde do sono.
+
+Os documentos destas entidades serão selecionados de acordo com a sua pertinência, data, fundamentação e âmbito de aplicação. Será distinguida a natureza de cada publicação, nomeadamente orientações clínicas, consensos, relatórios e materiais informativos. A proveniência institucional será registada, sem substituir a apreciação do conteúdo e da evidência apresentada.
+
+As expressões de pesquisa serão adaptadas à sintaxe e aos campos de cada base, combinando os seguintes grupos de conceitos:
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{array}
+% \usepackage{graphicx}
+\begin{table}[H]
+	\centering
+	\caption{Conceitos de pesquisa}
+	\label{tab:pesquisa}
+	\resizebox{\columnwidth}{!}{%
+		\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{14.4cm}@{}}
+			\toprule
+			\multicolumn{1}{c}{\textbf{Eixo}}      & \multicolumn{1}{>{\centering\arraybackslash}p{14.4cm}}{\textbf{Conceitos a combinar}}                                 \\ \midrule
+			Intervenções digitais e personalização & Insónia ou TCC-I; aplicações móveis ou intervenções digitais; personalização ou adaptação.                            \\ \midrule
+			Integração de \textit{wearables}       & Insónia ou TCC-I; \textit{smartwatch}, \textit{wearable} ou actigrafia; intervenção, tratamento ou \textit{feedback}. \\ \midrule
+			Seleção do momento de intervenção      & Sono ou insónia; JITAI, notificações adaptativas ou ensaios microaleatorizados.                                       \\ \midrule
+			Mecanismos computacionais              & Sono ou insónia; aprendizagem automática ou inteligência artificial; recomendação ou decisão de intervenção.          \\ \bottomrule
+		\end{tabular}%
+	}
+\end{table}
+
+Serão utilizados predominantemente termos em inglês, incluindo variantes como \textit{cognitive behavioral therapy} e \textit{cognitive behavioural therapy}. Na consulta das fontes portuguesas, serão também utilizados termos como “insónia”, “sono”, “terapia cognitivo-comportamental” e “saúde digital”. A pesquisa será complementada pela consulta das referências dos trabalhos selecionados e das publicações que os citam.
+
+Na consolidação da revisão, serão privilegiados trabalhos publicados entre 2015 e a data de atualização da pesquisa, sem excluir publicações anteriores necessárias para enquadrar abordagens ou sistemas relevantes. Serão considerados estudos em português e inglês, com foco na população adulta. Para as orientações e os documentos institucionais, será verificada a existência de atualizações ou versões posteriores.
+
+A seleção será orientada pelos seguintes critérios de inclusão:
+
+\begin{itemize}
+	\item Estudos sobre intervenções digitais para a insónia ou dificuldades de sono relevantes para o âmbito da dissertação.
+	\item Trabalhos que descrevam componentes terapêuticas, mecanismos de personalização, integração de \textit{wearables} ou seleção do momento de intervenção.
+	\item Estudos de validação de dispositivos cujos resultados sejam relevantes para a utilização dos dados nas decisões do sistema.
+	\item Orientações clínicas e documentos institucionais pertinentes para o enquadramento clínico, tecnológico ou nacional.	
+	\item Publicações com informação suficiente para identificar os métodos, o âmbito, os resultados ou as recomendações e as respetivas limitações.
+\end{itemize}
+
+
+Serão excluídos trabalhos sem relação direta com estes eixos, publicações duplicadas e materiais promocionais sem fundamentação verificável. Estudos exclusivamente pediátricos ou centrados noutras perturbações serão considerados apenas quando apresentarem contributos tecnológicos ou metodológicos pertinentes, explicitando-se os limites da sua aplicação à insónia em adultos.
+
+A seleção dos estudos decorrerá pela análise dos títulos e resumos, seguida de uma leitura mais pormenorizada dos trabalhos potencialmente relevantes. Os documentos institucionais serão avaliados através do seu título, finalidade e conteúdo. Serão registadas as fontes consultadas, as datas, as expressões utilizadas e as razões de exclusão dos trabalhos. Estes registos permitirão descrever o percurso de seleção de forma transparente.
+
+Os trabalhos serão classificados segundo a natureza da evidência. Os ensaios de eficácia serão distinguidos dos estudos de viabilidade, usabilidade, validação de dispositivos e protocolos de investigação. As revisões da literatura apoiarão o enquadramento e a identificação de estudos primários. As orientações clínicas e os documentos de posição serão utilizados para enquadrar as recomendações e os limites de aplicação. A documentação descritiva das soluções será utilizada para caracterizar funcionalidades e finalidades, distinguindo essas descrições da evidência de benefício clínico.
+
+Para cada estudo selecionado, serão extraídos a população e a dimensão da amostra, o desenho do estudo, a duração, as componentes terapêuticas, a origem dos dados, o mecanismo de adaptação, a supervisão profissional, o comparador e os resultados. Será dada atenção à informação disponível no momento da decisão e à possibilidade de o desenho experimental isolar o contributo da personalização ou da temporização. Nos documentos institucionais, serão registados a entidade responsável, a versão, a data, a população abrangida e as recomendações relevantes.
+
+A síntese será temática e comparativa. Quando uma característica não estiver suficientemente descrita, será assinalada como informação não reportada, evitando inferir a sua ausência. Esta abordagem permitirá relacionar as capacidades das soluções com a evidência que as sustenta e fundamentar o posicionamento da presente dissertação.
+
+
+
+\section{Soluções digitais para o sono e a insónia} 
+\label{sec:chap3_solucoesDigitais} %For referencing this section elsewhere
+
+As soluções digitais relacionadas com o sono apresentam diferentes finalidades, incluindo a disponibilização de programas terapêuticos, o apoio ao acompanhamento profissional, a monitorização e o acesso a conteúdos de relaxamento. A comparação deve considerar essas diferenças, identificando o que cada solução disponibiliza e que evidência sustenta a sua utilização.
+
+Nesta secção, analisam-se aplicações e programas digitais identificados na pesquisa realizada para a presente dissertação. A caracterização baseia-se nos estudos e na documentação consultada, distinguindo as funcionalidades anunciadas pelos responsáveis das soluções dos resultados demonstrados em investigação. As categorias utilizadas podem sobrepor-se, uma vez que uma aplicação pode combinar monitorização, \textit{feedback} e conteúdos de apoio ao sono.
+
+\subsection{Programas estruturados para a insónia}
+
+\subsection*{Sleepio}
+
+O \textit{Sleepio} constitui uma referência na disponibilização automatizada de TCC-I. Espie et al. (2012) avaliaram uma versão \textit{Web} organizada em seis sessões, apresentadas por um terapeuta virtual animado, com apoio automatizado, conteúdos complementares e acesso a uma comunidade moderada.
+
+O ensaio incluiu 164 adultos e comparou a intervenção com uma condição de controlo baseada em imaginação e com cuidados habituais. Foram observadas melhorias superiores na eficiência do sono no grupo de TCC-I, mantidas no seguimento de oito semanas após o tratamento. Estes resultados referem-se ao programa avaliado e não permitem atribuir os benefícios isoladamente ao terapeuta virtual, às mensagens ou à comunidade (Espie et al., 2012).
+
+\subsection*{SHUTi}
+
+O \textit{Sleep Healthy Using the Internet} (SHUTi) é um programa auto guiado e interativo organizado em seis módulos. Utiliza diários preenchidos pelo utilizador para acompanhar a evolução e adaptar recomendações, incluindo objetivos personalizados, \textit{feedback} gráfico e mensagens de apoio à adesão (Nazem et al., 2023).
+
+Ritterband et al. (2017) avaliaram o programa num ensaio com 303 adultos com insónia crónica, comparando-o com um \textit{website} educativo. Os resultados favoreceram o SHUTi nos indicadores principais, com manutenção dos benefícios no seguimento de um ano.
+
+Nazem et al. (2023) estudaram posteriormente a intervenção em 231 veteranos, encontrando resultados favoráveis na gravidade da insónia. O SHUTi demonstra que a adaptação de recomendações com dados individuais já está presente em programas estabelecidos. Contudo, a comparação com educação estática avalia diferenças entre intervenções completas, sem isolar o efeito da personalização ou do momento de entrega.
+
+\subsection*{Headspace Sleep Program}
+
+O \textit{Headspace} deve ser analisado distinguindo os seus conteúdos gerais do \textit{Headspace Sleep Program}. Este programa integra técnicas de TCC-I e \textit{mindfulness} num percurso auto guiado de 18 sessões (Staiano et al., 2025).
+
+Num ensaio com 132 adultos com insónia, o programa foi comparado com uma lista de espera. Foram observadas melhorias superiores nos sintomas de insónia e na eficiência do sono, avaliada através de diário e actigrafia. O comparador permite analisar o benefício face à espera, mas não estabelecer superioridade perante outro tratamento ativo (Staiano et al., 2025). A utilização de actigrafia na avaliação também não demonstra que esses dados tenham sido utilizados para adaptar o programa.
+
+Este trabalho justifica a inclusão do programa entre as intervenções estruturadas, evitando caracterizar toda a oferta do \textit{Headspace} exclusivamente como relaxamento.
+
+\subsection{Aplicações de apoio ao tratamento e auto cuidado}
+
+\subsection*{CBT-i Coach}
+
+O \textit{CBT-i Coach} foi concebido para apoiar pessoas que realizam TCC-I com um profissional. A documentação oficial descreve um diário de sono, \textit{feedback} personalizado, ferramentas de relaxamento e lembretes relacionados com horários e atividades (National Center for PTSD, 2026a).
+
+A sua finalidade distingue-o de um programa autónomo: a aplicação apoia a implementação do tratamento entre consultas, mantendo o profissional integrado no processo. Assim, a ausência de um serviço de consulta dentro da aplicação não deve ser interpretada como ausência de acompanhamento clínico na modalidade de utilização prevista.
+
+\subsection*{Insomnia Coach}
+
+O \textit{Insomnia Coach} é apresentado como uma ferramenta de educação e auto cuidado, utilizável autonomamente ou como complemento ao acompanhamento profissional. Inclui um plano de treino de cinco semanas, diário interativo e \textit{feedback} sobre o sono (National Center for PTSD, 2026b).
+
+A documentação esclarece que a aplicação não substitui os cuidados profissionais necessários e identifica situações que justificam consulta antes da utilização. Este exemplo evidencia a importância de comunicar o âmbito e os limites da ferramenta. A descrição institucional permite caracterizar as funcionalidades e a finalidade, mas deve ser distinguida de uma avaliação experimental dos seus resultados.
+
+\subsection{Aplicações de monitorização e feedback}
+
+\subsection*{Sleep Cycle}
+
+O \textit{Sleep Cycle} combina monitorização com um alarme que funciona dentro de uma janela de despertar definida pelo utilizador. Segundo o fabricante, o sistema procura selecionar um momento de sono mais ligeiro dentro desse intervalo (Sleep Cycle, s.d.).
+
+Esta funcionalidade interessa à análise de decisões temporais, mas tem uma finalidade diferente da seleção de oportunidades terapêuticas de TCC-I. A existência de um alarme adaptado às estimativas do sono não demonstra que a aplicação reconheça necessidades de intervenção sobre a insónia.
+
+\subsection*{ShutEye}
+
+O \textit{ShutEye} disponibiliza monitorização, relatórios e sugestões relacionadas com os resultados apresentados. O fabricante refere a utilização de um modelo de IA para produzir uma pontuação de qualidade do sono (ShutEye, s.d.).
+
+Para a dissertação, interessa analisar a passagem dos registos para o \textit{feedback} e as recomendações. Contudo, a referência comercial à IA não permite concluir que exista precisão superior ou benefício clínico demonstrado. Esses aspetos exigem validação específica.
+
+\subsection*{Pillow}
+
+O \textit{Pillow} apresenta funcionalidades de análise do sono no ecossistema \textit{Apple}. A documentação descreve a utilização de dados recolhidos pelo \textit{Apple Watch} e, em determinadas configurações, de gravações de áudio realizadas pelo \textit{iPhone} (Pillow, s.d.).
+
+A aplicação constitui um exemplo relevante para estudar a integração de fontes de dados e a apresentação de análises ao utilizador. A utilização de sinais do \textit{smartwatch} deve, porém, ser distinguida da validação dos indicadores derivados e da sua adequação para orientar decisões terapêuticas.
+
+\subsection*{SleepWatch}
+
+O \textit{SleepWatch} disponibiliza monitorização e análise do sono, incluindo utilização com \textit{Apple Watch}. O fabricante apresenta também orientações e informações personalizadas relacionadas com os padrões do utilizador (SleepWatch, s.d.).
+
+O seu interesse reside na articulação entre monitorização e \textit{feedback}. A comparação deverá procurar esclarecer que informação fundamenta as sugestões e que evidência existe sobre os seus efeitos, assinalando como não descritos os mecanismos que não possam ser verificados.
+
+
+\subsection{Aplicações de relaxamento e apoio ao sono}
+
+\subsection*{BetterSleep}
+
+O \textit{BetterSleep} combina sons, música, histórias e meditações com funcionalidades de monitorização e gravação de sons noturnos. Por esse motivo, enquadra-se simultaneamente nas ferramentas de apoio ao sono e de monitorização (BetterSleep, s.d.).
+
+Para o projeto, constitui uma referência para a organização de conteúdos sonoros e para a articulação entre consulta de conteúdos e registo do sono. Estas funcionalidades devem ser analisadas separadamente da implementação de um programa estruturado de TCC-I.
+
+\subsection*{Calm}
+
+O \textit{Calm} disponibiliza histórias, música e meditações destinadas a apoiar a transição para o sono (Calm, s.d.). A sua inclusão permite estudar a apresentação de exercícios e conteúdos complementares, sem pressupor equivalência com os programas terapêuticos anteriormente descritos.
+
+Também os conteúdos gerais de \textit{mindfulness} e apoio ao sono do \textit{Headspace} devem ser distinguidos do programa específico avaliado por Staiano et al. (2025). A comparação deverá, assim, identificar o módulo ou a intervenção em análise, em vez de atribuir a uma marca inteira as características de um único programa.
+
+\subsection{Síntese comparativa}
+
+A comparação das soluções permite identificar capacidades relevantes para o projeto e limitações que condicionam a sua utilização ou a interpretação dos resultados. A tabela seguinte distingue pontos fortes, limitações e contributos para a aplicação proposta.
+
+Os pontos fortes e as limitações referem-se às funcionalidades e aos estudos anteriormente apresentados. Quando a documentação não permite confirmar uma característica ou demonstrar um benefício, essa insuficiência de informação não deve ser interpretada como ausência da funcionalidade ou ineficácia da solução.
+
+\renewcommand{\arraystretch}{1.3} % Aumenta ligeiramente o espaço entre as linhas para melhor leitura
+
+\begin{xltabular}{\textwidth}{@{} 
+		>{\raggedright\arraybackslash}p{2.2cm} 
+		>{\raggedright\arraybackslash}X 
+		>{\raggedright\arraybackslash}X 
+		>{\raggedright\arraybackslash}p{3.2cm} @{}}
+	
+	% --- 1. CABEÇALHO DA PRIMEIRA PÁGINA ---
+	\caption{Comparação das soluções digitais para o sono e a insónia}
+	\label{tab:compareSolutions} \\
+	\toprule
+	\textbf{Solução} & \textbf{Pontos fortes} & \textbf{Limitações e condicionantes} & \textbf{Relevância para o projeto} \\ \midrule
+	\endfirsthead
+	
+	% --- 2. CABEÇALHO DAS PÁGINAS SEGUINTES ---
+	\caption[]{Comparação das soluções digitais para o sono e a insónia (continuação)} \\
+	\toprule
+	\textbf{Solução} & \textbf{Pontos fortes} & \textbf{Limitações e condicionantes} & \textbf{Relevância para o projeto} \\ \midrule
+	\endhead
+	
+	% --- 3. RODAPÉ NO FIM DE CADA PÁGINA (antes de quebrar) ---
+	\midrule
+	\multicolumn{4}{r}{\textit{Continua na próxima página...}} \\
+	\endfoot
+	
+	% --- 4. RODAPÉ DA ÚLTIMA PÁGINA (fim da tabela) ---
+	\bottomrule
+	\endlastfoot
+	
+	% =========================================================
+	% LINHAS DE DADOS DA TABELA
+	% =========================================================
+	
+	\textbf{Sleepio} & Programa estruturado e automatizado, com sessões interativas e evidência experimental de melhoria do sono. & O ensaio apresentado avalia o programa completo, sem isolar os efeitos das mensagens, do terapeuta virtual ou de outras funcionalidades. & Referência para organizar o percurso terapêutico e apresentar conteúdos de forma interativa. \\ \midrule
+	
+	\textbf{SHUTi} & Adapta recomendações com base no diário; inclui objetivos e feedback personalizados; apresenta resultados com seguimento prolongado. & Exige participação no registo dos dados. Os estudos apresentados não isolam o benefício da personalização nem da seleção temporal do apoio. & Referência para articular diário, evolução e adaptação das recomendações. \\ \midrule
+	
+	\textbf{Headspace Sleep Program} & Integra técnicas de TCC-I e mindfulness num programa sequencial, com avaliação num ensaio clínico. & A comparação com lista de espera não demonstra superioridade face a outro tratamento ativo. Os resultados dizem respeito ao programa específico. & Referência para a sequência de conteúdos e a integração de exercícios. \\ \midrule
+	
+	\textbf{CBT-i Coach} & Reúne diário, feedback, ferramentas e lembretes de apoio ao tratamento. & A modalidade de utilização prevista pressupõe TCC-I com acompanhamento profissional. & Referência para funcionalidades de apoio à aplicação das estratégias entre consultas. \\ \midrule
+	
+	\textbf{Insomnia Coach} & Disponibiliza um plano de utilização autónoma, diário e feedback; comunica situações que justificam avaliação profissional. & A utilização autónoma tem limites clínicos. A documentação institucional, isoladamente, não demonstra eficácia. & Referência para organizar o autocuidado e comunicar o âmbito da aplicação. \\ \midrule
+	
+	\textbf{Sleep Cycle} & Combina monitorização com um alarme que seleciona o despertar dentro de uma janela configurada. & A seleção do despertar não equivale à identificação de uma oportunidade terapêutica de TCC-I. A precisão das estimativas exige avaliação própria. & Referência para configuração de horários e compreensão das decisões temporais. \\ \midrule
+	
+	\textbf{ShutEye} & Apresenta relatórios, pontuações e sugestões associadas à monitorização. & A utilização de IA anunciada pelo fabricante não demonstra, por si só, precisão superior ou benefício terapêutico. & Referência para estudar como os dados são transformados em feedback compreensível. \\ \midrule
+	
+	\textbf{Pillow} & Integra dados do Apple Watch e, em determinadas configurações, áudio do iPhone. & A utilização depende de dispositivos e permissões compatíveis. A integração de sensores não demonstra a validade de todos os indicadores derivados. & Referência para integração de dados e apresentação das respetivas origens e limitações. \\ \midrule
+	
+	\textbf{SleepWatch} & Articula monitorização com informações e orientações personalizadas. & A descrição comercial consultada não esclarece suficientemente a validação clínica do mecanismo de recomendação. & Referência para analisar a ligação entre padrões observados e sugestões ao utilizador. \\ \midrule
+	
+	\textbf{BetterSleep} & Combina diversidade de conteúdos sonoros com funcionalidades de monitorização. & A disponibilidade de conteúdos e registos não demonstra a implementação de um tratamento estruturado de TCC-I. & Referência para funcionalidades complementares e organização da biblioteca de relaxamento. \\ \midrule
+	
+	\textbf{Calm} & Disponibiliza histórias, música e meditações orientadas para o apoio ao sono. & Os conteúdos descritos devem ser distinguidos de um programa completo de TCC-I e da respetiva evidência clínica. & Referência para apresentação e utilização de exercícios de relaxamento. \\ 
+	
+\end{xltabular}
+
+A comparação evidencia que nenhuma funcionalidade deve ser avaliada isoladamente da finalidade da solução. O acompanhamento profissional, por exemplo, pode constituir uma vantagem numa intervenção supervisionada e uma condicionante quando o objetivo é disponibilizar utilização autónoma.
+
+Para a presente dissertação, os contributos mais relevantes incluem a organização de um percurso terapêutico, a utilização do diário para adaptar o apoio, a integração de dados de dispositivos e a apresentação de \textit{feedback}. A avaliação do protótipo deverá permitir perceber se a combinação proposta acrescenta benefício, em particular na seleção das oportunidades de intervenção.
