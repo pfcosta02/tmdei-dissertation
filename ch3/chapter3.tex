@@ -411,13 +411,88 @@ Na avaliação do protótipo, propõe-se distinguir a completude dos registos, o
 
 O contributo da integração consiste, assim, em disponibilizar informação utilizável e rastreável para o mecanismo de decisão, com limitações conhecidas. A secção seguinte aprofundará as abordagens computacionais que podem transformar essa informação em recomendações personalizadas.
 
-% Fontes técnicas complementares consultadas em 12-11-2026, a integrar na bibliografia:
-% Apple. Authorizing access to health data.
-% https://developer.apple.com/documentation/healthkit/authorizing-access-to-health-data
-% Google. Synchronize data.
-% https://developer.android.com/health-and-fitness/health-connect/sync-data
-% Google. Write data.
-% https://developer.android.com/health-and-fitness/health-connect/write-data
-% Manter também as referências existentes de HKCategoryValueSleepAnalysis e
-% Develop Sleep Experiences with Health Connect. Ajustar s.d.-a, s.d.-b, etc.
-% às entradas efetivas e à ordenação adotada na bibliografia do documento principal.
+
+\section{Métodos computacionais de personalização e decisão de intervenção}
+\label{sec:chap3_computationalPersonalization}
+
+A disponibilidade de dados individuais permite adaptar o funcionamento de uma aplicação, mas não determina, por si só, como essa adaptação deve ser realizada. O problema computacional envolve transformar observações em decisões: selecionar um conteúdo, ajustar a sua apresentação ou decidir se deve ser disponibilizado num determinado momento. A análise do estado da arte exige, por isso, identificar as entradas de cada método, a decisão produzida e a evidência que sustenta a sua utilização.
+
+Importa distinguir três tarefas: caracterizar os padrões de sono, estimar a recetividade do utilizador e selecionar uma intervenção. Estas tarefas podem integrar o mesmo sistema, mas têm objetivos e critérios de avaliação diferentes. Um algoritmo que identifica irregularidade nos horários não demonstra necessariamente que uma notificação será bem recebida; da mesma forma, prever uma resposta à aplicação não estabelece que o conteúdo apresentado produzirá benefício terapêutico. Esta distinção orienta a comparação seguinte entre regras explícitas, aprendizagem não supervisionada, modelos preditivos e aprendizagem de políticas de intervenção.
+
+\subsection{Personalização baseada em regras e conhecimento do domínio}
+\label{sec:chap3_ruleBasedPersonalization}
+
+No enquadramento das JITAIs, as regras de decisão relacionam as variáveis de adaptação com as opções de intervenção, podendo incluir a opção de não fornecer apoio naquele momento (Nahum-Shani et al., 2018). Assim, uma intervenção pode ser adaptativa sem que as suas regras sejam aprendidas automaticamente aplicando, ou seja, uma política previamente definida pode produzir decisões diferentes quando recebe dados diferentes.
+
+Para uma aplicação de TCC-I, esta possibilidade pode ser concretizada através de condições associadas ao progresso no programa, aos registos disponíveis ou às preferências de contacto. Como exemplo de conceção, um lembrete do diário poderá depender da ausência de um registo, da janela de contacto escolhida e do número de lembretes já enviados. A condição é individualizada pelos dados, embora a lógica permaneça explícita. Este exemplo constitui uma possibilidade de implementação, e não uma regra clínica extraída dos estudos.
+
+O \textit{iREST}, descrito por Pulantara et al. (2018), ilustra uma forma de personalização apoiada por uma arquitetura que liga aplicação móvel e portal clínico. Os registos do utilizador alimentam resumos e sugestões apresentados ao profissional, que decide quais as componentes a prescrever. O sistema permite também selecionar materiais educativos a partir das dificuldades reportadas. O trabalho descreve o desenvolvimento e a avaliação de usabilidade desta organização, não demonstrando um modelo autónomo que aprenda a selecionar intervenções a partir de dados de sensores.
+
+Da comparação resulta uma distinção relevante para o projeto: automatizar a apresentação de informação, apoiar uma decisão profissional e tomar autonomamente essa decisão são capacidades diferentes. Uma implementação baseada em regras oferece um ponto de referência verificável para avaliar métodos adicionais. Contudo, a cobertura das situações depende das condições previstas pelos seus autores; ampliar essa cobertura exige identificar exceções, resolver conflitos entre regras e manter a sua fundamentação.
+
+\subsection{Identificação de perfis através de aprendizagem não supervisionada}
+\label{sec:chap3_sleepProfiles}
+
+A aprendizagem não supervisionada pode apoiar a organização de observações segundo semelhanças, sem exigir uma classificação prévia de cada registo como oportunidade de intervenção. No contexto desta dissertação, interessa sobretudo a possibilidade de caracterizar padrões individuais e diferenças entre utilizadores, mantendo separada essa caracterização da decisão terapêutica.
+
+Takeuchi et al. (2024), já considerados na Secção~\ref{sec:chap3_integrateWearables}, aplicaram agrupamento hierárquico a indicadores da média e variabilidade intraindividual da duração, do ponto médio e da eficiência do sono. Identificaram dois grupos, um dos quais apresentava maior instabilidade. Na intervenção subsequente, as mensagens baseavam-se nas noites anteriores e o envio era microaleatorizado diariamente, com probabilidade de 50\%. O agrupamento caracterizava a população; não constituía um algoritmo que aprendesse autonomamente o instante ótimo de envio.
+
+Este exemplo mostra a utilidade de decompor o processamento em etapas: construir indicadores, caracterizar perfis e avaliar uma intervenção. Para a aplicação proposta, a atribuição de um perfil poderia constituir uma variável adicional de personalização. Todavia, a pertença a um grupo não deverá ser interpretada como diagnóstico nem como indicação suficiente para selecionar uma componente da TCC-I. Será também necessário verificar se o perfil permanece estável quando aumenta o histórico ou existem dados em falta, evitando que pequenas alterações na amostra provoquem mudanças injustificadas nas recomendações.
+
+\subsection{Modelos preditivos e estimação da recetividade}
+\label{sec:chap3_receptivityPrediction}
+
+A aprendizagem supervisionada requer exemplos associados a um resultado observável. Na seleção do momento de contacto, esse resultado pode ser definido como a resposta dentro de um intervalo, a conclusão de uma atividade ou o tempo até à interação. A definição escolhida condiciona aquilo que o modelo aprende: estimar a probabilidade de abertura de uma mensagem é uma tarefa diferente de estimar a realização da atividade proposta.
+
+Mishra et al. (2021) implementaram modelos de recetividade numa aplicação de promoção da atividade física, num estudo de três semanas com 83 participantes. Compararam o envio em momentos aleatórios com um modelo estático de máquinas de vetores de suporte e um modelo adaptativo que combinava regressões logísticas populacional e individual. As entradas incluíam horário, bateria, interação com o dispositivo e atividade. A componente individual foi ativada após sete dias de recolha. O estudo encontrou vantagens de recetividade em análises do envio orientado pelos modelos, mas não avaliou o tratamento da insónia.
+
+O interesse deste trabalho para a dissertação reside na passagem de uma previsão calculada retrospectivamente para uma decisão executada na aplicação. A utilização de um modelo individual exige, contudo, resolver o início de utilização sem histórico suficiente. Para o protótipo, deverá ser comparada com uma política de referência que funcione desde o primeiro dia, documentando quando existem dados que justifiquem a adaptação.
+
+King et al. (2024) estudaram a recetividade a avaliações momentâneas em 45 participantes, usando dados fisiológicos e de movimento. A análise incluiu \textit{random forests} para prever a resposta e modelos para inferir estados emocionais durante as não respostas. Os autores identificaram o risco de uma seleção orientada apenas pela recetividade favorecer momentos associados a estados emocionais mais positivos. A interpretação depende, em parte, de estados inferidos, e a validação utilizou partições aleatórias personalizadas; os resultados não estabelecem desempenho prospetivo numa população com insónia.
+
+Esta limitação é relevante para o desenho da recolha: selecionar apenas os momentos em que se espera uma resposta pode alterar os contextos representados nos dados. Propõe-se, por isso, distinguir os indicadores de interação dos indicadores de necessidade de apoio e registar as oportunidades em que o sistema decidiu não contactar o utilizador. Para avaliar um modelo destinado a prever acontecimentos futuros, os exemplos de teste deverão respeitar essa ordem temporal. Quando o objetivo for generalizar para novos utilizadores, será igualmente necessário separar participantes entre treino e teste.
+
+\subsection{Aprendizagem de políticas e seleção adaptativa de ações}
+\label{sec:chap3_interventionPolicies}
+
+Uma política de intervenção define a ação a executar em função da informação disponível. Nos métodos de aprendizagem por reforço, a atualização dessa política utiliza resultados observados após as ações. Os \textit{contextual bandits} abordam a escolha entre alternativas com base no contexto e numa recompensa proximal; formulações mais amplas podem considerar consequências posteriores das decisões. O problema exige equilibrar a recolha de informação sobre alternativas com a utilização das opções já consideradas promissoras (Liao et al., 2020).
+
+No HeartSteps, Liao et al. (2020) desenvolveram uma política para decidir sobre o envio de sugestões de atividade física em cinco oportunidades diárias. O método combinava informação contextual e histórico, atualização bayesiana e uma aproximação do efeito diferido da carga de intervenção. A recompensa baseava-se nos passos nos 30 minutos seguintes. A avaliação apresentada incluía simulações e dados piloto, pelo que não demonstra eficácia de uma política equivalente na TCC-I.
+
+Para aplicar esta família de métodos ao projeto, seria necessário definir previamente as ações admissíveis, o resultado a otimizar e o período em que este seria observado. Uma recompensa baseada exclusivamente na abertura de notificações poderia favorecer mensagens que geram interação sem apoiar a execução do programa. Em contrapartida, um resultado medido apenas no final do tratamento dificultaria a atribuição do contributo de cada decisão. A escolha da recompensa constitui, portanto, parte do problema de investigação e necessita de fundamentação.
+
+Na presente dissertação, a aprendizagem contínua deverá ser considerada em função do volume de interações que seja efetivamente possível recolher. A existência de um algoritmo adequado não garante que um estudo curto produza informação suficiente para o ajustar e avaliar. Antes de escolher esta abordagem, importa verificar se os dados permitem distinguir os resultados das alternativas e se as decisões exploratórias são compatíveis com o protocolo de utilização. As restrições sobre conteúdos, horários e frequência deverão permanecer verificáveis independentemente do método de aprendizagem.
+
+\subsection{Comparação das abordagens e implicações para a dissertação}
+\label{sec:chap3_personalizationSynthesis}
+
+A Tabela~\ref{tab:personalizationMethods} sintetiza as famílias analisadas. Os aspetos favoráveis e as limitações resultam da comparação metodológica dos trabalhos e não constituem uma ordenação de eficácia, dado que os estudos têm finalidades, populações e resultados distintos.
+
+\begingroup
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{xltabular}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\caption{Comparação de métodos de personalização e decisão de intervenção}\label{tab:personalizationMethods}\\
+\toprule
+\textbf{Abordagem} & \textbf{Contributo computacional} & \textbf{Aspetos favoráveis} & \textbf{Limitações e condições}\\ \midrule
+\endfirsthead
+\caption[]{Comparação de métodos de personalização e decisão de intervenção (continuação)}\\
+\toprule
+\textbf{Abordagem} & \textbf{Contributo computacional} & \textbf{Aspetos favoráveis} & \textbf{Limitações e condições}\\ \midrule
+\endhead
+\midrule\multicolumn{4}{r}{\textit{Continua na próxima página}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Regras explícitas & Relacionam condições conhecidas com ações admissíveis. & Permitem inspeção da lógica e utilização sem um conjunto de treino. & Dependem da cobertura das regras e da resolução de exceções e conflitos.\\ \midrule
+Agrupamento de perfis & Organiza padrões semelhantes; exemplo em Takeuchi et al. (2024). & Apoia a exploração da heterogeneidade e a construção de variáveis de personalização. & Não identifica, por si só, a ação benéfica nem o momento adequado.\\ \midrule
+Previsão supervisionada & Estima resultados definidos, como a resposta a um contacto; exemplo em Mishra et al. (2021). & Permite comparar previsões com resultados observados e incorporar contexto. & Requer rótulos pertinentes e validação temporal; prever resposta não demonstra benefício terapêutico.\\ \midrule
+Aprendizagem de políticas & Atualiza a seleção de ações a partir dos seus resultados; exemplo em Liao et al. (2020). & Permite investigar adaptação ao histórico de resposta. & Exige uma recompensa fundamentada, oportunidades de aprendizagem e limites à exploração.\\
+\end{xltabular}
+\endgroup
+
+As abordagens podem desempenhar funções complementares. Como orientação de conceção decorrente desta análise, o protótipo poderá separar a preparação dos indicadores, a estimação de variáveis relevantes e a aplicação da política de intervenção. Desta forma, uma previsão de recetividade poderá informar a seleção entre opções previamente consideradas admissíveis, sem substituir a definição dos conteúdos terapêuticos. Esta organização é uma proposta a avaliar, não uma conclusão de superioridade demonstrada pelos estudos.
+
+Para tornar o contributo tecnológico verificável, a comparação deverá incluir uma política de referência suficientemente explícita para ser reproduzida. Se o objetivo for estudar o efeito do momento de entrega, deverão manter-se comparáveis os conteúdos e a quantidade de apoio entre condições; se conteúdo e momento variarem simultaneamente, a conclusão dirá respeito ao conjunto da adaptação. Será também necessário conservar a versão das regras ou do modelo, as entradas disponíveis e o resultado de cada decisão, incluindo a decisão de não enviar uma mensagem.
+
+A evidência analisada sustenta a investigação de mecanismos de personalização, mas não identifica um método universalmente superior para a TCC-I. A escolha dependerá da tarefa, dos dados acessíveis e da possibilidade de avaliar o método no contexto de utilização. A secção seguinte aprofundará a organização das oportunidades de intervenção e os desenhos de avaliação que permitem estudar os efeitos da entrega adaptativa.
